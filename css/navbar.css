@@ -16,14 +16,26 @@ nav ul {
 }
 
 nav ul li {
-    padding: 1.5rem;
+    padding: 1.2rem;
+    padding-bottom: 0.8rem;
     font-family: 'Spectral', serif;
     font-size: 1.1rem;
+}
+
+nav ul li:hover {
+    color: white;
+    background-color: #b71c1c;
+    transition: 0.3s;
 }
 
 nav ul li.name {
     flex:1;
     font-size: 1.5rem;
+}
+
+nav ul li.name:hover {
+    color: black;
+    background-color: white;
 }
 
 nav ul li .menu-icon {
@@ -51,5 +63,6 @@ nav ul li.visible {
     
     nav ul li.name {
         display: block;
+        font-size: 1.2rem;
     }    
 }
