@@ -1,0 +1,55 @@
+nav {
+    margin: 0rem;
+    padding: 0rem;
+    background-color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+nav ul li {
+    padding: 1.5rem;
+    font-family: 'Spectral', serif;
+    font-size: 1.1rem;
+}
+
+nav ul li.name {
+    flex:1;
+    font-size: 1.5rem;
+}
+
+nav ul li .menu-icon {
+    display: none;
+    float: right;
+    padding: 0.2rem;
+}
+
+nav ul li.visible {
+    display: block;
+}
+
+@media screen and (max-width: 800px) {
+    nav ul li {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li .menu-icon {
+        display: block;
+    }
+    
+    nav ul li.name {
+        display: block;
+    }    
+}

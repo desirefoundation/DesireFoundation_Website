@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;500&display=swap');
+
+body {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.nav-container {
+    padding: 1.2rem;
+}
+
+.home {
+    background-image: url("../img/Desire_Home_Picture_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
