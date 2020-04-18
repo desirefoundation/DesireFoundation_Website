@@ -47,6 +47,36 @@ a.btn:hover {
     margin: 6rem;
 }
 
+.mission-vission-container .mission-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mission-vision-container .mission-container .blue {
+    color: white;
+    background-color: #1a237e;
+    width: 60%;
+    height: 20rem
+}
+
+
+.mission-vision-container .vision-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mission-vision-container .vision-container .white {
+    width: 60%;
+    height: 20rem
+}
+
+.mission-vision-container .vision-container .blue {
+    background-color: #1a237e;
+    width: 40%;
+}
+
 @media screen and (max-width: 800px) {
     .home .content {
         margin-left: 1.2rem;
