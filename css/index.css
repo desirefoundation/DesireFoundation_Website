@@ -47,7 +47,7 @@ a.btn:hover {
     margin: 6rem;
 }
 
-.mission-vission-container .mission-container {
+.mission-vision-container .mission-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -57,7 +57,27 @@ a.btn:hover {
     color: white;
     background-color: #1a237e;
     width: 60%;
-    height: 20rem
+    padding-left: 2rem;
+    padding-right: 20rem;
+    padding-bottom: 5rem;
+}
+
+.mission-vision-container .mission-container .blue h1 {
+    margin-top: 4rem;
+    font-family: 'Spectral', serif;
+}
+
+.mission-vision-container .mission-container .blue h5 {
+    font-family: 'Spectral', serif;
+    font-weight: 300;
+}
+
+.mission-vision-container .mission-container .white img {
+    width: 38rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: relative;
+    left: -10rem
 }
 
 
@@ -69,13 +89,67 @@ a.btn:hover {
 
 .mission-vision-container .vision-container .white {
     width: 60%;
-    height: 20rem
 }
 
 .mission-vision-container .vision-container .blue {
     background-color: #1a237e;
     width: 40%;
 }
+
+/* VISION AREA */
+
+.mission-vision-container .vision-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mission-vision-container .vision-container .blue {
+    color: white;
+    background-color: #1a237e;
+    width: 60%;
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+}
+
+.mission-vision-container .vision-container .blue h1 {
+    margin-top: 4rem;
+    font-family: 'Spectral', serif;
+    margin-left: 20rem;
+}
+
+.mission-vision-container .vision-container .blue h5 {
+    font-family: 'Spectral', serif;
+    font-weight: 300;
+    margin-left: 20rem;
+}
+
+.mission-vision-container .vision-container .white img {
+    width: 38rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: relative;
+    left: 10rem
+}
+
+
+.mission-vision-container .vision-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mission-vision-container .vision-container .white {
+    width: 40%;
+}
+
+.mission-vision-container .vision-container .blue {
+    background-color: #1a237e;
+    width: 60%;
+}
+
+
+
 
 @media screen and (max-width: 800px) {
     .home .content {
