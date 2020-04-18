@@ -33,3 +33,22 @@ body {
     font-weight: 300;
     font-size: 1.4rem
 }
+
+a.btn {
+    background-color: #b71c1c;
+    color: white;
+}
+
+a.btn:hover {
+    color:white;
+}
+
+.carousel {
+    margin: 6rem;
+}
+
+@media screen and (max-width: 800px) {
+    .home .content {
+        margin-left: 1.2rem;
+    }
+}
