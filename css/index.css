@@ -47,6 +47,8 @@ a.btn:hover {
     margin: 6rem;
 }
 
+/* MISSION AREA */
+
 .mission-vision-container .mission-container {
     display: flex;
     flex-direction: row;
@@ -79,7 +81,6 @@ a.btn:hover {
     position: relative;
     left: -10rem
 }
-
 
 .mission-vision-container .vision-container {
     display: flex;
@@ -155,4 +156,22 @@ a.btn:hover {
     .home .content {
         margin-left: 1.2rem;
     }
+
+    .carousel {
+        margin: 1rem;
+    }
+
+    /* MISSION AREA */
+
+    .mission-vision-container .mission-container {
+        flex-direction: column;
+        margin: 0rem;
+    }
+
+    .mission-vision-container .mission-container .blue {
+        width: 100%;
+        padding: 0rem;
+    }
+
+
 }

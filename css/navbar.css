@@ -2,6 +2,7 @@ nav {
     margin: 0rem;
     padding: 0rem;
     background-color: white;
+    overflow: hidden;
 }
 
 nav ul {
