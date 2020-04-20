@@ -152,7 +152,7 @@ a.btn:hover {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     .home .content {
         margin-left: 1.2rem;
     }
@@ -171,7 +171,54 @@ a.btn:hover {
     .mission-vision-container .mission-container .blue {
         width: 100%;
         padding: 0rem;
+        padding-left: 2rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
     }
+
+    .mission-vision-container .mission-container .blue h1 {
+        margin-top: 2rem;
+    }
+
+    .mission-vision-container .mission-container .white {
+        width: 100%;
+        padding: 0rem;
+    }
+
+    .mission-vision-container .mission-container .white img {
+        width: 100%;
+        padding: 0rem;
+        position: static;
+    }
+
+    /* VISION AREA */
+
+    .mission-vision-container .vision-container {
+        flex-direction: column-reverse;
+    }
+
+    .mission-vision-container .vision-container .blue {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .mission-vision-container .vision-container .blue h1 {
+        margin: 0rem;
+    }
+
+    .mission-vision-container .vision-container .blue h5 {
+        margin: 0rem;
+    }
+
+    .mission-vision-container .vision-container .white {
+        width: 100%;
+    }
+
+    .mission-vision-container .vision-container .white img {
+        padding: 0rem;
+        width: 100%;
+        position: static;
+    }   
 
 
 }
