@@ -2,6 +2,10 @@
     font-family: 'Spectral', serif;
 }
 
+.tree-container {
+    padding: 10em
+}
+
 .hide {
     visibility: hidden;
 }
