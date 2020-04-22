@@ -12,3 +12,7 @@ $(function(){
         })
     })
 });
+
+$(function(){
+    $(".footer-container").load("common/footer.html")
+})

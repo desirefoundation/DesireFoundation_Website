@@ -18,6 +18,8 @@ body {
 
 .home .content {
     margin-left: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .home .content h1 {
@@ -44,7 +46,7 @@ a.btn:hover {
 }
 
 .carousel {
-    margin: 6rem;
+    width: 100%;
 }
 
 /* MISSION AREA */
@@ -157,8 +159,8 @@ a.btn:hover {
         margin-left: 1.2rem;
     }
 
-    .carousel {
-        margin: 1rem;
+    .home {
+        background-size: auto;
     }
 
     /* MISSION AREA */
@@ -193,6 +195,7 @@ a.btn:hover {
 
     /* VISION AREA */
 
+    
     .mission-vision-container .vision-container {
         flex-direction: column-reverse;
     }
