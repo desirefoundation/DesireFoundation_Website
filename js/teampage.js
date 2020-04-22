@@ -124,5 +124,9 @@ window.addEventListener('scroll', function () {
             document.querySelector('#Branch16').classList.remove('hide');
         }, 800);
     }
+
+    else {
+        
+    }
 });
 

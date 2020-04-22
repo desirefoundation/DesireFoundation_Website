@@ -2,8 +2,21 @@
     font-family: 'Spectral', serif;
 }
 
+
+.nav-container {
+    padding: 1.2rem;
+    padding-bottom: 50em;
+}
+
+.home {
+    background-image: url("../img/team.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
 .tree-container {
-    padding: 10em
+    padding: 7em 17em
 }
 
 .hide {
