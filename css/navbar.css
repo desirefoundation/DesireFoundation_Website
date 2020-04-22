@@ -5,6 +5,14 @@ nav {
     margin: 0rem;
     padding: 0rem;
     background-color: white;
+    overflow: hidden;
+}
+
+nav img {
+    width: 3rem;
+    float: left;
+    margin: 0.6rem;
+    margin-right: 0rem;
 }
 
 nav ul {
@@ -23,6 +31,7 @@ nav ul li {
     padding-bottom: 0.8rem;
     font-family: 'Spectral', serif;
     font-size: 1.1rem;
+    vertical-align: center;
 }
 
 nav ul li:hover {
