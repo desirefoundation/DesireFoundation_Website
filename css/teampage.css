@@ -17,11 +17,11 @@
 
 .network {
     position: relative;
-    margin: -2em;
+    margin: 2%;
 }
 
 .tree-container {
-    padding: 7em 17em;
+    padding: 5% 13%;
     z-index: 1;
 }
 
@@ -34,6 +34,7 @@
     top: 22%;
     left: 18%;
     border-radius: 50%;
+    width: 5%;
 }
 
 
@@ -42,6 +43,7 @@
     top: 16%;
     left: 28%;
     border-radius: 50%;
+    width: 10%;
 }
 
 .p3 {
@@ -49,6 +51,7 @@
     top: 37%;
     left: 25%;
     border-radius: 50%;
+    width: 7%;
 }
 
 .p4 {
@@ -56,6 +59,7 @@
     top: 60%;
     left: 17%;
     border-radius: 50%;
+    width: 6%;
 }
 
 .p5 {
@@ -63,6 +67,7 @@
     top: 55%;
     left: 29%;
     border-radius: 50%;
+    width: 11%;
 }
 
 .p6 {
@@ -70,6 +75,7 @@
     top: 75%;
     left: 24%;
     border-radius: 50%;
+    width: 8%;
 }
 
 .p7 {
@@ -77,6 +83,7 @@
     top: 27%;
     left: 38%;
     border-radius: 50%;
+    width: 7%;
 }
 
 .p8 {
@@ -84,20 +91,23 @@
     top: 44%;
     left: 44%;
     border-radius: 50%;
+    width: 6%;
 }
 
 .p9 {
     position: absolute;
     top: 64%;
-    left: 40%;
+    left: 41%;
     border-radius: 50%;
+    width: 7%;
 }
 
 .p10 {
     position: absolute;
     top: 15%;
-    left: 53%;
+    left: 50%;
     border-radius: 50%;
+    width: 6%;
 }
 
 .p11 {
@@ -105,6 +115,7 @@
     top: 34%;
     left: 55%;
     border-radius: 50%;
+    width: 11%;
 }
 
 .p12 {
@@ -112,6 +123,7 @@
     top: 53%;
     left: 52%;
     border-radius: 50%;
+    width: 4%;
 }
 
 .p13 {
@@ -119,13 +131,15 @@
     top: 60%;
     left: 60%;
     border-radius: 50%;
+    width: 6%
 }
 
 .p14 {
     position: absolute;
     top: 40%;
-    left: 65%;
+    left: 67%;
     border-radius: 50%;
+    width: 5%;
 }
 
 .p15 {
@@ -133,6 +147,7 @@
     top: 22%;
     left: 62%;
     border-radius: 50%;
+    width: 6.5%;
 }
 
 .p16 {
@@ -140,6 +155,7 @@
     top: 67%;
     left: 69%;
     border-radius: 50%;
+    width: 11%;
 }
 
 .p17 {
@@ -147,6 +163,7 @@
     top: 10%;
     left: 72%;
     border-radius: 50%;
+    width: 8%;
 }
 
 .p18 {
@@ -154,6 +171,7 @@
     top: 35%;
     left: 75%;
     border-radius: 50%;
+    width: 8.5%;
 }
 
 .hide {
