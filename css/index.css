@@ -76,6 +76,10 @@ a.btn:hover {
   font-weight: 300;
 }
 
+.mission-vision-container .mission-container .white {
+  width: 40%
+}
+
 .mission-vision-container .mission-container .white img {
   width: 38rem;
   padding-top: 4rem;
