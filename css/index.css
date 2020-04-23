@@ -153,7 +153,7 @@ a.btn:hover {
 
 /*  TIMELINE AREA  */
 
-section {
+section.timeline {
   padding: 100px 0;
 }
 
@@ -162,36 +162,11 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  font-family: "Roboto";
-  font-size: 17px;
-  font-weight: 400;
-  background-color: #eee;
-}
-
-h1 {
-  font-size: 200%;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 400;
-}
-
-header {
-  background: #3f51b5;
-  color: #ffffff;
-  padding: 150px 0;
-}
-header p {
-  font-family: "Allura";
-  color: rgba(255, 255, 255, 0.2);
-  margin-bottom: 0;
-  font-size: 60px;
-  margin-top: -30px;
-}
-
 .timeline {
   position: relative;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 }
+
 .timeline::before {
   content: "";
   background: #c5cae9;
