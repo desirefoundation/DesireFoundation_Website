@@ -333,13 +333,17 @@ blockquote {
 
 /* MOBILE COMPATIBILITY */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   .home .content {
     margin-left: 1.2rem;
   }
 
   .home {
     background-size: auto;
+  }
+
+  .home .content h1 {
+    font-size: 3rem;
   }
 
   /* MISSION AREA */
@@ -399,5 +403,11 @@ blockquote {
     padding: 0rem;
     width: 100%;
     position: static;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home .content h1 {
+    font-size: 2rem;
   }
 }
