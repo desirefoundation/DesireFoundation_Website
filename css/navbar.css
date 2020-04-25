@@ -1,4 +1,4 @@
-nav {
+/* nav {
     margin: 0rem;
     padding: 0rem;
     background-color: white;
@@ -74,4 +74,16 @@ nav ul li.visible {
         display: block;
         font-size: 1rem;
     }    
+} */
+
+nav a span {
+    margin-left: 1rem;
+    font-family: 'Spectral', sans-serif;
+    font-size: 1.2rem;
+}
+
+nav ul li {
+    font-family: 'Spectral', sans-serif;
+    padding: 0.3rem;
+    color: black !important;
 }
