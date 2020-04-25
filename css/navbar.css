@@ -39,7 +39,7 @@ nav ul li:hover {
 
 nav ul li.name {
     flex:1;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 nav ul li.name:hover {
