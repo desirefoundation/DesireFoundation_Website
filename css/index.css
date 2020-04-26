@@ -32,7 +32,6 @@ body {
   padding-bottom: 3rem;
   height: 31.6rem;
   position: relative;
-  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -185,14 +184,33 @@ body {
 
 .timeline {
   position: relative;
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+ background-image: url("../img/milestones-01.jpg");
+     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.timeline-content-paragraph {
+	font-family: 'Spectral', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+.timeline-content-header {
+	font-family: 'Spectral', sans-serif;
+}
+.timeline-title {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  margin: 2rem;
+  text-align: center;
+   color: black;
 
+}
 .timeline::before {
   content: "";
   background: #c5cae9;
   width: 5px;
-  height: 95%;
+  height: 80%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -204,7 +222,6 @@ body {
 }
 .timeline-item:nth-child(even) .timeline-content {
   float: right;
-  padding: 40px 30px 10px 30px;
 }
 .timeline-item:nth-child(even) .timeline-content::after {
   content: "";
@@ -224,12 +241,14 @@ body {
 }
 
 .timeline-content {
-  position: relative;
-  width: 45%;
-  padding: 10px 30px;
-  border-radius: 4px;
-  background: #f5f5f5;
-  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    width: 35%;
+    padding: 10px 30px;
+    border-radius: 4px;
+    background: #f5f5f5;
+    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+    margin-left: 8rem;
+	margin-right: 8rem;
 }
 .timeline-content::after {
   content: "";
@@ -297,6 +316,7 @@ blockquote {
   position: absolute;
   top: 0;
   right: 0;
+  font-family: 'Spectral', sans-serif;
 }
 
 @media screen and (max-width: 768px) {

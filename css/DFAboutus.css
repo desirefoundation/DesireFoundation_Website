@@ -1,6 +1,36 @@
 /* css document*/
-html,body{
-    height: 100%
+
+.nav-container-vartika {
+  position: absolute;
+  z-index: 2;
+  margin: 1rem 1rem 0 1rem;
+  width: calc(100% - 2rem);
+}
+.contentaboutus-1 {
+    position: relative;
+    background: white;
+    width: 60%;
+    padding: 40px;
+    margin: 100px 0px 100px 20px;
+    font-family: serif;
+    border-radius: 10px;
+    opacity: 0.8;
+    align-self: flex-end;
+    font-size: 22px;
+    color: black;
+}
+.contentaboutus-2 {
+    position: relative;
+    background: white;
+    width: 60%;
+    padding: 40px;
+    margin: 100px 0px 100px 520px;
+    font-family: serif;
+    border-radius: 10px;
+    opacity: 0.8;
+    align-self: flex-end;
+    font-size: 22px;
+    color: black;
 }
 .content1aboutus {
   background-attachment: fixed;
@@ -31,48 +61,57 @@ html,body{
   font-family:serif;
   border-radius:10px;
   opacity: 0.8;
+   align-self: flex-end;
+  font-size:22px;
+  color:black;
+}
+.content-aboutus-list   {
+		text-align: left;
+		list-style: none;
+}
+
+.content-aboutus-list li:before {
+		
+		content: " \2666 \00BB";
 }
 .headaboutus{
   font-size: 50px;
 }
-p
-{
-  align-self: flex-end;
-  font-size:30px;
-  color:black;
-}
+
 .scroll-bgaboutus {
   background-color: #0f0f0a;
   padding: 10px 70px;
   color: #676767;
 }
 .bg1AU {
-  background-image: url('photo.jpg');
+  background-image: url('../img/About-us-1.jpg');
 }
 .bg2AU {
-  background-image: url('photo1.jpg');
+  background-image: url('../img/Mission.jpg');
 }
 .bg3AU {
-  background-image: url('photo2.jpg');
+  background-image: url('../img/Vision.jpg');
 }
 .bg4AU {
-  background-image: url('photo3.jpg');
+  background-image: url('../img/About-us-when.jpg');
 }
 .bg5AU {
-  background-image: url('photo4.jpg');
+  background-image: url('../img/Teams_CoreValues.jpg');
 }
 .bg0AU{
 
-  background-image: url('photo9.jpg');
+  background-image: url('../img/team.jpg');
 }
 
 
 .posaboutus{
 top: 50%;
 left: 50%;
-font-size:50px;
-color:white;
-margin-top: 1000px; /* Half the height */
+color: white;
+margin-top: 130px;
 margin-left: 10px;
+font-size: 3.3rem;
+font-family: "Playfair Display", serif;
+font-weight: 300;
 
 }

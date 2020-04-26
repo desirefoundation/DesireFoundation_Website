@@ -21,6 +21,7 @@
   /* border: 1px solid blue; */
   padding: 18px;
   box-shadow: 0 10px 20px 0 rgba(0,0,0,.15);
+  word-wrap: break-word;
 }
 #nav_slide div:not(:last-child):after {
   content: "";

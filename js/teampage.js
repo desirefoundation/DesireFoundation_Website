@@ -20,8 +20,10 @@ $(function () {
 });
 
 $(function () {
-    $('[data-toggle="popover"]').popover()
-  })
+    $('[data-toggle="popover"]').popover({
+        trigger:'hover'
+    });
+  });
 
 window.addEventListener('scroll', function () {
     var element = document.querySelector('.tree-container');
