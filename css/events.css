@@ -154,3 +154,11 @@ body {
     background-color: whitesmoke;
     vertical-align: top;
 }
+
+
+.projects-top-container, .events-top-container {
+    background-image: url("../img/Desire_Home_Picture_1.jpg");
+    padding-bottom: 35rem;
+    background-size: cover;
+}
+
