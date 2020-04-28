@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@300;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
 body {
   margin: 0rem;
@@ -13,17 +13,17 @@ body {
 }
 
 .home {
-  background-image: url("../img/home_page.jpg");
+  background-image: url('../img/home_page.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 //commented because of not white
 .home:before {
-    content: '';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 1;
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
 }
 
 .home .content {
@@ -39,27 +39,26 @@ body {
 
 .home .content h2 {
   font-size: 3rem;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 300;
   margin: 2rem;
   margin-left: 0rem;
-      color: white;
+  color: white;
 }
 
 a.btn {
-     background-color: #1a237e;
-    color: #ffffff;
-    padding: 0.7rem 2rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-	margin-left: 8rem;
+  background-color: #1a237e;
+  color: #ffffff;
+  padding: 0.7rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: 8rem;
 }
 
 a.btn:hover {
   color: white !important;
 }
-
 
 /* MISSION AREA */
 
@@ -72,7 +71,7 @@ a.btn:hover {
 
 .mission-vision-container .mission-container .blue {
   color: black;
-  background-color:#ff929e;
+  background-color: #ff929e;
   width: 60%;
   padding-left: 2rem;
   padding-right: 20rem;
@@ -81,18 +80,18 @@ a.btn:hover {
 
 .mission-vision-container .mission-container .blue h1 {
   margin-top: 4rem;
-  font-family: "Spectral", serif;
+  font-family: 'Spectral', serif;
   text-align: center;
 }
 
 .mission-vision-container .mission-container .blue h5 {
-  font-family: "Spectral", serif;
+  font-family: 'Spectral', serif;
   font-weight: 300;
   text-align: center;
 }
 
 .mission-vision-container .mission-container .white {
-  width: 40%
+  width: 40%;
 }
 
 .mission-vision-container .mission-container .white img {
@@ -136,13 +135,13 @@ a.btn:hover {
 
 .mission-vision-container .vision-container .blue h1 {
   margin-top: 4rem;
-  font-family: "Spectral", serif;
+  font-family: 'Spectral', serif;
   margin-left: 20rem;
   text-align: center;
 }
 
 .mission-vision-container .vision-container .blue h5 {
-  font-family: "Spectral", serif;
+  font-family: 'Spectral', serif;
   font-weight: 300;
   margin-left: 20rem;
   text-align: center;
@@ -184,30 +183,29 @@ body {
 
 .timeline {
   position: relative;
- background-image: url("../img/milestones-01.jpg");
-     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url('../img/milestones-01.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .timeline-content-paragraph {
-	font-family: 'Spectral', sans-serif;
-    font-weight: 300;
-    font-size: 1.2rem;
+  font-family: 'Spectral', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 .timeline-content-header {
-	font-family: 'Spectral', sans-serif;
+  font-family: 'Spectral', sans-serif;
 }
 .timeline-title {
   font-size: 3rem;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 300;
   margin: 2rem;
   text-align: center;
-   color: black;
-
+  color: black;
 }
 .timeline::before {
-  content: "";
+  content: '';
   background: #c5cae9;
   width: 5px;
   height: 80%;
@@ -224,7 +222,7 @@ body {
   float: right;
 }
 .timeline-item:nth-child(even) .timeline-content::after {
-  content: "";
+  content: '';
   position: absolute;
   border-style: solid;
   width: 0;
@@ -235,23 +233,23 @@ body {
   border-color: transparent #f5f5f5 transparent transparent;
 }
 .timeline-item::after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
 
 .timeline-content {
-    position: relative;
-    width: 35%;
-    padding: 10px 30px;
-    border-radius: 4px;
-    background: #f5f5f5;
-    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
-    margin-left: 8rem;
-	margin-right: 8rem;
+  position: relative;
+  width: 35%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #f5f5f5;
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+  margin-left: 8rem;
+  margin-right: 8rem;
 }
 .timeline-content::after {
-  content: "";
+  content: '';
   position: absolute;
   border-style: solid;
   width: 0;
@@ -285,7 +283,7 @@ body {
 
 .timeline-item .timeline-img-header {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
-    url("https://picsum.photos/1000/800/?random") center center no-repeat;
+    url('https://picsum.photos/1000/800/?random') center center no-repeat;
   background-size: cover;
 }
 
@@ -329,13 +327,14 @@ blockquote {
   .timeline .timeline-content {
     max-width: 100%;
     width: auto;
-    margin-left: 70px;
+    margin-left: 4.5rem;
+    margin-right: 2rem;
   }
   .timeline .timeline-item:nth-child(even) .timeline-content {
     float: none;
   }
   .timeline .timeline-item:nth-child(odd) .timeline-content::after {
-    content: "";
+    content: '';
     position: absolute;
     border-style: solid;
     width: 0;
