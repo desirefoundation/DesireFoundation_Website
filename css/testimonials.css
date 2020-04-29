@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.carousel {
+    height: 600px;
+    perspective: 250px;
+}
+
+.carousel .carousel-item {
+    width: 360px;
+    height: 600px;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'), local('MaterialIcons-Regular'),
+        url(https://fonts.gstatic.com/s/materialicons/v18/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2)
+            format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    /* -moz-font-feature-settings: 'liga';*/
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.middle-indicator {
+    position: relative;
+    top: 50%;
+}
+.middle-indicator-text {
+    font-size: 4.2rem;
+}
+a.middle-indicator-text {
+    color: white !important;
+}
+.content-indicator {
+    width: 64px;
+    height: 64px;
+    background: none;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+.indicators {
+    visibility: hidden;
+}
