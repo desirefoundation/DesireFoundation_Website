@@ -7,30 +7,30 @@
   width: calc(100% - 2rem);
 }
 .contentaboutus-1 {
-    position: relative;
-    background: white;
-    width: 60%;
-    padding: 40px;
-    margin: 100px 0px 100px 20px;
-    font-family: serif;
-    border-radius: 10px;
-    opacity: 0.8;
-    align-self: flex-end;
-    font-size: 22px;
-    color: black;
+  position: relative;
+  background: white;
+  width: 60%;
+  padding: 40px;
+  margin: 100px 0px 100px 20px;
+  font-family: serif;
+  border-radius: 10px;
+  opacity: 0.8;
+  align-self: flex-end;
+  font-size: 22px;
+  color: black;
 }
 .contentaboutus-2 {
-    position: relative;
-    background: white;
-    width: 60%;
-    padding: 40px;
-    margin: 100px 0px 100px 520px;
-    font-family: serif;
-    border-radius: 10px;
-    opacity: 0.8;
-    align-self: flex-end;
-    font-size: 22px;
-    color: black;
+  position: relative;
+  background: white;
+  width: 60%;
+  padding: 40px;
+  margin: 100px 0px 100px 520px;
+  font-family: serif;
+  border-radius: 10px;
+  opacity: 0.8;
+  align-self: flex-end;
+  font-size: 22px;
+  color: black;
 }
 .content1aboutus {
   background-attachment: fixed;
@@ -43,7 +43,7 @@
   text-align: center;
   display: table;
 }
-.fontaboutus{
+.fontaboutus {
   font-size: 300;
   font-family: fantasy;
   font-stretch: expanded;
@@ -52,29 +52,28 @@
   font-variant-position: super;
 }
 
-.contentaboutus{
+.contentaboutus {
   position: relative;
   background: white;
-  width:60%;
-  padding:40px;
-  margin:100px auto;
-  font-family:serif;
-  border-radius:10px;
+  width: 60%;
+  padding: 40px;
+  margin: 100px auto;
+  font-family: serif;
+  border-radius: 10px;
   opacity: 0.8;
-   align-self: flex-end;
-  font-size:22px;
-  color:black;
+  align-self: flex-end;
+  font-size: 22px;
+  color: black;
 }
-.content-aboutus-list   {
-		text-align: left;
-		list-style: none;
+.content-aboutus-list {
+  text-align: left;
+  list-style: none;
 }
 
 .content-aboutus-list li:before {
-		
-		content: " \2666 \00BB";
+  content: " \2666 \00BB";
 }
-.headaboutus{
+.headaboutus {
   font-size: 50px;
 }
 
@@ -84,34 +83,60 @@
   color: #676767;
 }
 .bg1AU {
-  background-image: url('../img/About-us-1.jpg');
+  background-image: url("../img/About-us-1.jpg");
 }
 .bg2AU {
-  background-image: url('../img/Mission.jpg');
+  background-image: url("../img/Mission.jpg");
 }
 .bg3AU {
-  background-image: url('../img/Vision.jpg');
+  background-image: url("../img/Vision.jpg");
 }
 .bg4AU {
-  background-image: url('../img/About-us-when.jpg');
+  background-image: url("../img/About-us-when.jpg");
 }
 .bg5AU {
-  background-image: url('../img/Teams_CoreValues.jpg');
+  background-image: url("../img/Teams_CoreValues.jpg");
 }
-.bg0AU{
+.bg0AU {
+  background-image: url("../img/team.jpg");
+}
 
-  background-image: url('../img/team.jpg');
+.posaboutus {
+  top: 50%;
+  left: 50%;
+  color: white;
+  margin-top: 130px;
+  margin-left: 10px;
+  font-size: 3.3rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
 }
 
 
-.posaboutus{
-top: 50%;
-left: 50%;
-color: white;
-margin-top: 130px;
-margin-left: 10px;
-font-size: 3.3rem;
-font-family: "Playfair Display", serif;
-font-weight: 300;
+@media screen and (max-width: 900px) {
+  .posaboutus{
+    margin-bottom: 2rem;
+  }
 
+  .content1aboutus {
+    padding: 1.2rem
+  }
+
+  .contentaboutus-1 {
+    margin: 0rem;
+    padding: 2rem;
+    width: 100%
+  }
+
+  .contentaboutus-2 {
+    margin: 0rem;
+    padding: 2rem;
+    width: 100%
+  }
+
+  .contentaboutus {
+    margin: 0rem;
+    padding: 2rem;
+    width: 100%
+  }
 }
