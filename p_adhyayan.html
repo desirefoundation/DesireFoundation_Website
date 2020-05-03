@@ -56,17 +56,44 @@
       color: #490d00;
     }
     .af-sub-header {
-      text-align: center;
+      text-align: left;
+      padding-left: 50px;
       font-size: 30px;
       color: #490d00;
       margin-top: 50px;
     }
+
+    .af-sub-mid-header {
+      text-align: center;
+      padding-top: 25px;
+      font-size: 30px;
+      color: #490d00;
+      margin-top: 50px;
+    }
+
+    .quote_nm{
+      text-align: right;
+      padding-right: 90px;
+      margin-top: -10px;
+      color: darkgrey;
+      font-size: 18px;
+    }
+
     .af-f-para {
       padding: 25px 50px;
     }
     .af-row {
-      padding: 25px 50px;
+      padding: 25px 0px;
     }
+
+    .af-image{
+      padding-right: 50px;
+    }
+
+    .af-sub-cont-header{
+      padding-top: 25px;
+    }
+
     .af-s-para {
       text-align: center;
       padding-top: 30px;
@@ -78,6 +105,10 @@
     .af-gal-img {
       height: 400px;
       object-fit: cover;
+    }
+
+    .af-video-image{
+      padding-left:50px
     }
 
     @media screen and (min-width: 64.0625em) {
@@ -205,7 +236,7 @@
     <div class="af-parent">
       <div class="af-body container">
         <h1 class="af-header"><b>Adhyayan</b></h1>
-        <h3 class="af-header"><b>What is Adhyayan?</b></h3>
+        <h3 class="af-sub-header"><b>What is Adhyayan?</b></h3>
         <p class="af-f-para">
           Adhyayan is a project undertaken by Desire Foundation whose primary
           focus is Section 12(1)(c) of the RTE Act. This section under the RTE
@@ -216,21 +247,32 @@
           possible to enable these marginalized families to avail the benefits
           available to them through the act.
         </p>
-        <h3 class="af-header"><b>Why Adhyayan?</b></h3>
-        <p class="af-f-para">
-          Education is everyone's right. Yet there are many in our country for
-          whom it is a far fetched dream. To empower the poor and marginalized
-          in our society, education is of utmost importance. The RTE Act
-          provides us a means to do that- to turn that far fetched dream into
-          reality. However, the implementation of the RTE Act has been very poor
-          being 22% nationally and only 0.97% in Odisha. Hence, we started
-          Project Adhyayan to spread awareness about the Act and ensure a
-          maximum number of admissions in schools.
-        </p>
         <div class="af-row row u-sm-flex-col-reverse">
           <div class="col-lg-6 col-sm-12">
-            <h3 class="af-header"><b>The Journey Of Adhyayan!</b></h3>
-            <p class="af-s-para">
+            <h3 class="af-sub-header"><b>Why Adhyayan?</b></h3>
+            <p class="af-f-para">
+              Education is everyone's right. Yet there are many in our country for
+              whom it is a far fetched dream. To empower the poor and marginalized
+              in our society, education is of utmost importance. The RTE Act
+              provides us a means to do that- to turn that far fetched dream into
+              reality. However, the implementation of the RTE Act has been very poor
+              being 22% nationally and only 0.97% in Odisha. Hence, we started
+              Project Adhyayan to spread awareness about the Act and ensure a
+              maximum number of admissions in schools.
+            </p>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="af-image">
+              <img
+                src="./img/Adhyayan/adhyayan-1.jpg"
+                class="img-responsive"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+        <h3 class="af-sub-header"><b>The Journey Of Adhyayan!</b></h3>
+            <p class="af-f-para">
               The journey of adhayayan started in the year 2016-17 with our 1st
               adhayayan project. We began our work with 2 slums of Bhubaneshwar
               initially. We were successfully able to enroll around 5 kids in
@@ -246,20 +288,9 @@
               submitted. We wait for the schools to announce the results to get
               a final count of number of children enrolled.
             </p>
-          </div>
-          <div class="col-lg-6 col-sm-12">
-            <div class="af-image">
-              <img
-                src="./img/Adhyayan/adhyayan-1.jpg"
-                class="img-responsive"
-                width="100%"
-              />
-            </div>
-          </div>
-        </div>
         <div class="af-row row">
           <div class="col-lg-6 col-sm-12">
-            <div class="af-image" style="position: relative;">
+            <div class="af-video-image" style="position: relative;">
               <img
                 src="./img/Adhyayan/adhyayanvideosnippet.jpg"
                 class="img-responsive"
@@ -281,12 +312,23 @@
             </div>
           </div>
           <div class="col-lg-6 col-sm-12">
-            <h3 class="af-header"><b>Major Challenges!</b></h3>
-            <p class="af-s-para">
-              Lack of awareness about RTE among schools and citizens. Ignorance
-              of schools to implement RTE Sec 12(1)(c). Fear of parents that the
-              child might drift away from his/her cultural roots by studying in
-              an English medium school.
+            <h3 class="af-sub-cont-header"><b>Major Challenges!</b></h3>
+            <p class="af-f-cont-para">
+            <ul>
+            <li>Lack of awareness about RTE among schools and citizens.</li>
+            <li>Ignorance of schools to implement RTE Sec 12(1)(c). </li>
+            <li>Fear of parents that the child might drift away from his/her cultural roots by studying in an English medium school.</li>
+            </ul>
+            </p>
+            <h3 class="af-sub-cont-header"><b>To solve the issue of schools</b></h3>
+            <p class="af-f-cont-para">
+            We approached OPEPA (Odisha Primary
+            Education Program Authority) for their
+            support who recommended us to the BEO
+            (Block Education Office) authorities. The
+            officials were highly supportive in issuing a
+            notice to the schools stating that following
+            the RTE Act is mandatory.
             </p>
           </div>
           <div class="popup" id="VideoPopup">
@@ -309,7 +351,7 @@
             </div>
           </div>
         </div>
-        <h2 class="af-sub-header"><b>Adhyayan Data</b></h2>
+        <h2 class="af-sub-mid-header"><b>Adhyayan Data</b></h2>
         <div class="af-row row">
           <div class="col-md">
             <div
@@ -321,10 +363,12 @@
                 width: 350px;
                 display: flex;
                 align-items: center;
+                padding:15px;
               "
             >
               <canvas id="adChart1"></canvas>
             </div>
+            <p>Over the past 5 years we have given our best to stick to our moto and after successfull completion of Adhyayan phase 3 we have set a higher target for ourselves with 100 target admissions.</p>
           </div>
           <div class="col-md">
             <div
@@ -340,9 +384,12 @@
             >
               <canvas id="adChart2"></canvas>
             </div>
+            <p>The admission rate declined from phase 2 to phase 3 due to a smaller number of eligible 
+              candidates. Most of the families were already covered in phase 2 and the children were already 
+              enrolled into schools.</p>
           </div>
         </div>
-        <h2 class="af-sub-header"><b>Gallery</b></h2>
+        <h2 class="af-sub-mid-header"><b>Gallery</b></h2>
         <div
           id="af-gallery-carousel"
           class="carousel slide carousel-fade"
@@ -424,6 +471,8 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+        <h2 class="af-sub-mid-header" style = "color:darkcyan;"><q><i>It is easier to build strong children than to repair broken adults.</i></q></h2>
+        <p class="quote_nm">-Frederick Douglas</p>
       </div>
     </div>
     <div class="footer-container"></div>
@@ -486,7 +535,7 @@
 
     var dataFirst = {
       label: 'Children Surveyed',
-      data: [200, 400, 100, 150],
+      data: [230, 450, 150, 200],
       borderColor: 'rgba(54, 162, 235, 0.6)',
       backgroundColor: 'rgba(0, 0, 0, 0)',
       pointBackgroundColor: 'rgba(54, 162, 235, 0.6)',
@@ -494,7 +543,7 @@
 
     var dataSecond = {
       label: 'Number of Application',
-      data: [100, 200, 80, 100],
+      data: [5, 110, 75, 80],
       borderColor: 'rgba(255, 99, 132, 0.6)',
       backgroundColor: 'rgba(0, 0, 0, 0)',
       pointBackgroundColor: 'rgba(255, 99, 132, 0.6)',
