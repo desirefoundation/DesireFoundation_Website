@@ -99,6 +99,12 @@ body {
   align-self: center;
   font-family: 'Spectral', sans-serif;
 }
+
+.ref:hover{
+	color: #ffffff;
+    text-decoration: underline;
+}
+
 @media (min-width: 1000px) {
   .container-1 {
     display: flex;
@@ -151,7 +157,7 @@ body {
   }
 }
 .container-2 .pic-2 {
-  background-image: url(../img/adhyayan.jpg);
+  background-image: url(../img/aahar.jpg);
   background-size: 100% 100%;
   /* background-size: contain; */
   background-repeat: no-repeat;
