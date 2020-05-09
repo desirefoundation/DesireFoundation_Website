@@ -99,6 +99,12 @@ body {
   align-self: center;
   font-family: 'Spectral', sans-serif;
 }
+
+.ref:hover{
+	color: #ffffff;
+    text-decoration: underline;
+}
+
 @media (min-width: 1000px) {
   .container-1 {
     display: flex;
