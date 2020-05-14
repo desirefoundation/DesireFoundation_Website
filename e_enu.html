@@ -345,6 +345,10 @@ display: flex;
   visibility: hidden;
   transition: transform, opacity .6s ease-in-out,-webkit-transform .6s ease-in-out;
 }
+.kes-image-mobile{
+  padding-left: 5%;
+  padding-right: 5%;
+}
   </style>
   <body class="kes-main-body">
     <div class="header-image">
@@ -353,6 +357,13 @@ display: flex;
     <div class="kes-parent">
       <div class="kes-body container">
         <h1 class="kes-header"><b>Ek Nayi Umeed</b></h1>
+        <div class="kes-image-mobile">
+          <img
+            src="./img/enu/enu_right.jpg"
+            class="img-responsive"
+            width="100%"
+          />
+        </div>
         <h3 class="kes-sub-header"><b>The Idea</b></h3>
         <p class="kes-f-para">
           It is an initiative to financially help the underprivileged children. We achieved this with the help of crowdfunding and communicating with various organizations for sponsorship. We completed our 1st phase of Ek Nayi Umeed on February 2017. In phase 1, we helped a girl named Tarini who aspires to become a doctor in the future. We helped her through a crowdfunding website, Ketto and supported her to take a firm step towards her dream. The story of Tarini was then shared on Ketto. We marketed the donation link and collected around Rs. 12,000. A fixed amount of money is given to her as scholarship. Our main aim behind this initiative was to help these kids march towards their dreams and achieve them. Every year some portion the funds that you help us generate is forwarded towards the upliftment of the children who dare to dream big and are ready to break all norms in order to achieve it when given the right support along with the right resources. All your support has proven crucial in our growth without your support all our endeavors would go in vain. We believe in building healthy, long lasting relationships that will enable us to move forward with such initiatives.
@@ -525,5 +536,26 @@ display: flex;
       $('body').css('overflow', 'none');
       $('#' + el).addClass('popupOpen');
     }
+    function width() {
+    var win = $(this);
+    if (win.width() > 1000) {   
+      if ($('.kes-image').is(':empty')) { 
+      $('.kes-image').append('<img src="./img/enu/enu_right.jpg" class="img-responsive" width="100%"/>');
+      }
+      $('.kes-image-mobile').empty();
+  }
+    if(win.width()<1000){
+      $('.kes-image').empty();
+      if ($('.kes-image-mobile').is(':empty')) {
+        $('.kes-image-mobile').append('<img src="./img/enu/enu_right.jpg" class="img-responsive" width="100%"/>');
+    }
+  }
+}
+  $(document).ready(() => {
+      width();
+      });
+  window.addEventListener('resize', () => {
+      width();
+  });
   </script>
 </html>

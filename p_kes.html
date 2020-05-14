@@ -345,6 +345,10 @@ display: flex;
   visibility: hidden;
   transition: transform, opacity .6s ease-in-out,-webkit-transform .6s ease-in-out;
 }
+.kes-image-mobile{
+  padding-left: 5%;
+  padding-right: 5%;
+}
   </style>
   <body class="kes-main-body">
     <div class="header-image">
@@ -353,6 +357,13 @@ display: flex;
     <div class="kes-parent">
       <div class="kes-body container">
         <h1 class="kes-header"><b>Khwaish-e-Shiksha</b></h1>
+        <div class="kes-image-mobile">
+          <img
+            src="./img/kes/kes_left.jpg"
+            class="img-responsive"
+            width="100%"
+          />
+        </div>
         <h3 class="kes-sub-header"><b>The Beginning</b></h3>
         <p class="kes-f-para">
           This was an initiative we came up with in the year 2015.  We observed that there were large number of old, unused books present in each room of our hostels. They were unnoticed and neglected throughout the college years. Later, these books were sold by the students at a very minimal amount and the money was not spent judiciously by them. We recognised the value and power these books held. We approached people to donate us these books, since they were old and surplus people readily donated them to us. The value in return for these books was very small but we collected enough books to generate a good amount of fund by selling them. We bought new books against these funds and donated them to the families who couldn’t afford books for their kids. This enabled us to create a more sustainable approach to generate funds for our organisation in the beginning and help the one’s in need hand-in-hand. We carried out donations for this campaign at IIT Kharagpur Slums, Damna Basti and various other slums in and around Bhubaneswar.
@@ -549,5 +560,26 @@ display: flex;
       $('body').css('overflow', 'none');
       $('#' + el).addClass('popupOpen');
     }
+    function width() {
+    var win = $(this);
+    if (win.width() > 1000) {   
+      if ($('.kes-image').is(':empty')) { 
+      $('.kes-image').append('<img src="./img/kes/kes_left.jpg" class="img-responsive" width="100%"/>');
+      }
+      $('.kes-image-mobile').empty();
+  }
+    if(win.width()<1000){
+      $('.kes-image').empty();
+      if ($('.kes-image-mobile').is(':empty')) {
+        $('.kes-image-mobile').append('<img src="./img/kes/kes_left.jpg" class="img-responsive" width="100%"/>');
+    }
+  }
+}
+  $(document).ready(() => {
+      width();
+      });
+  window.addEventListener('resize', () => {
+      width();
+  });
   </script>
 </html>

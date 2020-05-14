@@ -364,6 +364,10 @@ display: flex;
   visibility: hidden;
   transition: transform, opacity .6s ease-in-out,-webkit-transform .6s ease-in-out;
 }
+.lol-image-mobile{
+  padding-left: 5%;
+  padding-right: 5%;
+}
   </style>
   <body class="lol-main-body">
     <div class="header-image">
@@ -372,6 +376,13 @@ display: flex;
     <div class="lol-parent">
       <div class="lol-body container">
         <h1 class="lol-header"><b>Liter of Light</b></h1>
+        <div class="lol-image-mobile">
+          <img
+            src="./img/lol/lol_image.jpg"
+            class="img-responsive"
+            width="100%"
+          />
+        </div>
         <h3 class="lol-sub-header"><b>The Beginning</b></h3>
         <p class="lol-f-para">
           In 2015, Desire Foundation took
@@ -576,5 +587,26 @@ display: flex;
       $('body').css('overflow', 'none');
       $('#' + el).addClass('popupOpen');
     }
+    function width() {
+    var win = $(this);
+    if (win.width() > 1000) {   
+      if ($('.lol-image').is(':empty')) { 
+      $('.lol-image').append('<img src="./img/lol/lol_image.jpg" class="img-responsive" width="100%"/>');
+      }
+      $('.lol-image-mobile').empty();
+  }
+    if(win.width()<1000){
+      $('.lol-image').empty();
+      if ($('.lol-image-mobile').is(':empty')) {
+        $('.lol-image-mobile').append('<img src="./img/lol/lol_image.jpg" class="img-responsive" width="100%"/>');
+    }
+  }
+}
+  $(document).ready(() => {
+      width();
+      });
+  window.addEventListener('resize', () => {
+      width();
+  });
   </script>
 </html>

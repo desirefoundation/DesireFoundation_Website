@@ -1,13 +1,13 @@
 function width() {
     var win = $(this); //this = window
-    console.log(win.width());
+    
     if (win.width() <= 1000) {
         $('#hey').removeClass('content-1');
         $('#hey').addClass('conten-1');
         $('#hey2').removeClass('content-3');
         $('#hey1').removeClass('container-3');
         $('#hey1').addClass('containe-3');
-        $('#hey2    ').addClass('conten-3');
+        $('#hey2').addClass('conten-3');
         $('#pic').addClass('pi');
         $('#pic').removeClass('pic');
         $('#pic-1').removeClass('pic1');
@@ -16,7 +16,7 @@ function width() {
         if ($('#pic-2').is(':empty')) {
             //do something
 
-            $('#pic-2').append(' <img src="desire.jpg" class="pi">');
+            $('#pic-2').append(' <img src="/img/aahar.jpg" class="pi">');
         }
         $('.break').empty();
     }

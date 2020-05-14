@@ -345,6 +345,10 @@ display: flex;
   visibility: hidden;
   transition: transform, opacity .6s ease-in-out,-webkit-transform .6s ease-in-out;
 }
+.kes-image-mobile{
+  padding-left: 5%;
+  padding-right: 5%;
+}
   </style>
   <body class="kes-main-body">
     <div class="header-image">
@@ -353,6 +357,13 @@ display: flex;
     <div class="kes-parent">
       <div class="kes-body container">
         <h1 class="kes-header"><b>Udaan</b></h1>
+        <div class="kes-image-mobile">
+          <img
+            src="./img/udaan/udaan_right.jpg"
+            class="img-responsive"
+            width="100%"
+          />
+        </div>
         <h3 class="kes-sub-header"><b>How it started?</b></h3>
         <p class="kes-f-para">
           It was a long dream to have the small kids belonging to the slums and nearby areas perform on stage. They generally don't get enough opportunities or recognition to showcase their talent. With this intent, and also as a fundraiser event we thought of organizing an open mic event. In one half of the event kids performed the rhymes they knew and loved. And in the other half we had artists from all over the city recite poetry over their thoughts on education.
@@ -547,5 +558,26 @@ display: flex;
       $('body').css('overflow', 'none');
       $('#' + el).addClass('popupOpen');
     }
+    function width() {
+    var win = $(this);
+    if (win.width() > 1000) {   
+      if ($('.kes-image').is(':empty')) { 
+      $('.kes-image').append('<img src="./img/udaan/udaan_right.jpg" class="img-responsive" width="100%"/>');
+      }
+      $('.kes-image-mobile').empty();
+  }
+    if(win.width()<1000){
+      $('.kes-image').empty();
+      if ($('.kes-image-mobile').is(':empty')) {
+        $('.kes-image-mobile').append('<img src="./img/udaan/udaan_right.jpg" class="img-responsive" width="100%"/>');
+    }
+  }
+}
+  $(document).ready(() => {
+      width();
+      });
+  window.addEventListener('resize', () => {
+      width();
+  });
   </script>
 </html>
