@@ -38,12 +38,6 @@
   flex-direction: column;
 }
 
- .team-top-container {
-  background-image: url('../img/teams_cover.jpg');
-  padding-bottom: 35rem;
-  background-size: cover;
-  background-position: center;
-}
  
 .test_header {
 	color: #333;
@@ -69,10 +63,7 @@
 	margin: 0 auto;
 	float: none !important;
 }
-.carousel {
-	margin: 50px auto;
-	padding: 0 70px;
-}
+
 .carousel .item {
 	color: #999;
 	font-size: 14px;
@@ -140,8 +131,17 @@
 </style>
   <body>
       <div class="team-top-container">
-        <div style="padding: 1.2rem;" class="nav-container"></div>
-        <h2 class="teams-main" style="text-shadow: 2px 2px #000000;">OUR TEAMS</h2>
+      <div class="nav-container"></div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide team-carousel" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/teams_cover.jpg" class="d-block w-100" alt="Our Team">
+                <div class="carousel-caption d-md-block">
+                  <h1>OUR TEAM</h1>
+                </div>
+            </div>
+          </div>
+        </div>        
       </div>
       <br>
     </div>
@@ -168,12 +168,31 @@
         <img class="p18 hide animated" data-toggle="popover" data-placement="top" data-content="Mr. Sayan Bhattacharya" src="img/sayan.jpg">
       </div>
     </div>
+    <div class="people">
+      <img class="pm1 rounded-circle pm img-thumbnail" data-toggle="popover" data-placement="top" data-content="Mr. Parth Gautam" src="img/parth.jpg">
+      <img class="pm2 rounded-circle pm img-thumbnail" data-toggle="popover" data-placement="top" data-content="Mrs. Sushmita Ghoshal" src="img/Susmita_Ghoshal.jpg">
+      <img class="pm3 rounded-circle pm img-thumbnail" data-toggle="popover" data-placement="top" data-content="Ms. Arundhati Pande" src="img/arundhati.jpg">
+      <img class="pm4 rounded-circle pm img-thumbnail" data-toggle="popover" data-placement="top" data-content="Ms. Smriti Shekhar" src="img/smriti.jpg">
+      <img class="pm5 rounded-circle pm img-thumbnail" data-toggle="popover" data-placement="top" data-content="Mr. Bipin Bihari Ganguly" src="img/Bipin.jpg">
+      <img class="pm6 rounded-circle pm img-thumbnail" data-toggle="popover" data-placement="top" data-content="Mr. Raju Ray" src="img/raju.jpg">
+      <img class="pm7 rounded-circle pm img-thumbnail" data-toggle="popover" data-placement="top" data-content="Ms. Shivangi Adeshara" src="img/shivangi.jpg">
+      <img class="pm9 rounded-circle pm img-thumbnail" data-toggle="popover" data-placement="top" data-content="Ms. Shalini Singh" src="img/Shalini.jpg">
+      <img class="pm10 rounded-circle pm img-thumbnail" data-toggle="popover" data-placement="top" data-content="Ms. Disha Kar" src="img/Disha.jpeg">
+      <img class="pm11 rounded-circle pm img-thumbnail" data-toggle="popover" data-placement="top" data-content="Mr. Tamal Sarkar" src="img/tamal.jpg">
+      <img class="pm12 rounded-circle pm img-thumbnail" data-toggle="popover" data-placement="top" data-content="Mr. Rounak Modi" src="img/rounak.jpg">
+      <img class="pm13 rounded-circle pm img-thumbnail" data-toggle="popover" data-placement="top" data-content="Ms. Asmita Mukherjee" src="img/asmita.jpg">
+      <img class="pm14 rounded-circle pm img-thumbnail" data-toggle="popover" data-placement="top" data-content="Ms. Ritika Ritolia" src="img/ritika.jpg">
+      <img class="pm15 rounded-circle pm img-thumbnail" data-toggle="popover" data-placement="top" data-content="Ms. Baidehi Ghosh" src="img/baidehi.jpg">
+      <img class="pm16 rounded-circle pm img-thumbnail" data-toggle="popover" data-placement="top" data-content="Mr. Soumik Ghoshal" src="img/Soumik.jpg">
+      <img class="pm17 rounded-circle pm img-thumbnail" data-toggle="popover" data-placement="top" data-content="Ms. Poushali Sen" src="img/Poushali.jpg">
+      <img class="pm18 rounded-circle pm img-thumbnail" data-toggle="popover" data-placement="top" data-content="Mr. Sayan Bhattacharya" src="img/sayan.jpg">
+    </div>
 	
 	<div class="container">
 	<div class="row">
 		<div class="col-md-8 col-center m-auto">
 			<h2 class = "test_header">Testimonials</h2>
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<div id="myCarousel" class="tm carousel slide" data-ride="carousel">
 				<!-- Carousel indicators -->
 				<ol class="carousel-indicators">
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -232,7 +251,7 @@
 				<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
 					<i class="fa fa-angle-right"></i>
 				</a>
-			</div>
+      </div>
 		</div>
 	</div>
 </div>

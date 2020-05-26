@@ -306,7 +306,7 @@ blockquote {
   padding: 0 20px;
 }
 
-.date {
+.timeline-item .date {
   background: #ff4081;
   display: inline-block;
   color: #ffffff;
@@ -318,6 +318,10 @@ blockquote {
 }
 
 @media screen and (max-width: 768px) {
+  .timeline-content-header {
+    margin-top: 3.4rem;
+  }
+
   .timeline::before {
     left: 50px;
   }

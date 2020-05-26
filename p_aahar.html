@@ -5,6 +5,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
     />
+    
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -246,6 +247,10 @@ display: flex;
   visibility: hidden;
   transition: transform, opacity .6s ease-in-out,-webkit-transform .6s ease-in-out;
 }
+.ahaar-image-mobile{
+  padding-left: 5%;
+  padding-right: 5%;
+}
   </style>
   <body class="ahaar-main-body">
     <div class="header-image">
@@ -254,6 +259,13 @@ display: flex;
     <div class="ahaar-parent">
       <div class="ahaar-body container">
         <h1 class="ahaar-header"><b>Aahar</b></h1>
+        <div class="ahaar-image-mobile">
+          <img
+            src="./img/aahar/aahar_right.jpg"
+            class="img-responsive"
+            width="100%"
+          />
+        </div>
         <h3 class="ahaar-sub-header"><b>The Beginning</b></h3>
         <p class="ahaar-f-para">
           We see places lit up, with glee and we know, it's the time around Dusshera, Durga Puja and Navratre!"
@@ -415,5 +427,26 @@ We are a group of very close knit, and passionate youngsters who realise our res
       $('body').css('overflow', 'none');
       $('#' + el).addClass('popupOpen');
     }
+    function width() {
+    var win = $(this);
+    if (win.width() > 1000) {   
+      if ($('.ahaar-image').is(':empty')) { 
+      $('.ahaar-image').append('<img src="./img/aahar/aahar_right.jpg" class="img-responsive" width="100%"/>');
+      }
+      $('.ahaar-image-mobile').empty();
+  }
+    if(win.width()<1000){
+      $('.ahaar-image').empty();
+      if ($('.ahaar-image-mobile').is(':empty')) {
+        $('.ahaar-image-mobile').append('<img src="./img/aahar/aahar_right.jpg" class="img-responsive" width="100%"/>');
+    }
+  }
+}
+  $(document).ready(() => {
+      width();
+      });
+  window.addEventListener('resize', () => {
+      width();
+  });
   </script>
 </html>

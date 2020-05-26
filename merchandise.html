@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
@@ -29,8 +30,6 @@
       font-family: 'Playfair Display', serif;
       font-weight: 300;
       color: white;
-      display: flex;
-      flex-direction: column;
     }
 
     .pc-content {
@@ -64,6 +63,21 @@
     }
     .col-lg-4 {
       padding: 20px;
+    }
+
+    @media screen and (max-width: 900px){
+      .pc-main{
+        position: static;
+        text-align: center;
+        font-size: 4rem;
+        margin-top: 3rem;
+      }
+    }
+
+    @media screen and (max-width: 500px){
+      .pc-main{
+        font-size: 3rem;
+      }
     }
   </style>
   <body>

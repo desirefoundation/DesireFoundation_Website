@@ -345,6 +345,10 @@ display: flex;
   visibility: hidden;
   transition: transform, opacity .6s ease-in-out,-webkit-transform .6s ease-in-out;
 }
+.kes-image-mobile{
+  padding-left: 5%;
+  padding-right: 5%;
+}
   </style>
   <body class="kes-main-body">
     <div class="header-image">
@@ -353,6 +357,13 @@ display: flex;
     <div class="kes-parent">
       <div class="kes-body container">
         <h1 class="kes-header"><b>Rice Bucket Challenge</b></h1>
+        <div class="kes-image-mobile">
+          <img
+            src="./img/rbc/rbc_right.jpg"
+            class="img-responsive"
+            width="100%"
+          />
+        </div>
         <h3 class="kes-sub-header"><b>The Idea</b></h3>
         <p class="kes-f-para">
           Originally initiated in Hyderabad, Desire took part in the Rice Bucket Challenge on 29th August 2014, donating 61 Kgs of rice to 61 families. Back then, Ice bucket challenge was trending and the concept was an extension of it and was more inclined towards spreading happiness to the underprivileged. Further, we nominated KAASH, NSS, Parivartan, and RON. It was a bright-eyed initiative that addressed the issue ‘absence of proper food for the deprived section of our community’. Such initiatives might bring a significant change in their nutritional requirements. It was a small but significant step towards providing a better lifestyle to the one who needs it. This challenge not only spread a trend but also created a meaningful and impactful revolution that was driven by fun and the spirit to uplift the nutritional situation of the people belonging to the backward section of the society. We are proud to be a part of this revolution and hope to come up with such innovations in the future as well. We hope this inspires all our kind viewers to step up and move forward with this trend, only then we can revolutionize it on a much larger and sustainable scale. We are also open and ready to take up any such profound and far-sighted challenges that you might suggest us. So, widen your imaginative, compassionate as well as philanthropic side and suggest away by reaching out to us. There is a social change-maker inside each of us, we just need to find it!
@@ -524,5 +535,26 @@ display: flex;
       $('body').css('overflow', 'none');
       $('#' + el).addClass('popupOpen');
     }
+    function width() {
+    var win = $(this);
+    if (win.width() > 1000) {   
+      if ($('.kes-image').is(':empty')) { 
+      $('.kes-image').append('<img src="./img/rbc/rbc_right.jpg" class="img-responsive" width="100%"/>');
+      }
+      $('.kes-image-mobile').empty();
+  }
+    if(win.width()<1000){
+      $('.kes-image').empty();
+      if ($('.kes-image-mobile').is(':empty')) {
+        $('.kes-image-mobile').append('<img src="./img/rbc/rbc_right.jpg" class="img-responsive" width="100%"/>');
+    }
+  }
+}
+  $(document).ready(() => {
+      width();
+      });
+  window.addEventListener('resize', () => {
+      width();
+  });
   </script>
 </html>

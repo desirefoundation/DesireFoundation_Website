@@ -345,6 +345,10 @@ display: flex;
   visibility: hidden;
   transition: transform, opacity .6s ease-in-out,-webkit-transform .6s ease-in-out;
 }
+.kes-image-mobile{
+  padding-left: 5%;
+  padding-right: 5%;
+}
   </style>
   <body class="kes-main-body">
     <div class="header-image">
@@ -353,6 +357,13 @@ display: flex;
     <div class="kes-parent">
       <div class="kes-body container">
         <h1 class="kes-header"><b>Diwali</b></h1>
+        <div class="kes-image-mobile">
+          <img
+            src="./img/diwali/diwali_right.jpg"
+            class="img-responsive"
+            width="100%"
+          />
+        </div>
         <h3 class="kes-sub-header"><b>The Idea</b></h3>
         <p class="kes-f-para">
           The members of our team went to Mahimanagar slum in Bhubaneshwar to spread happiness and joy on the occasion of Diwali. The idea was to celebrate Diwali in a non- conventional approach while making it jolly for the children in the slum as well as be eco-friendly. Card making competition was organised for the children in the slum. The children drew their hearts out and we helped them along the way. The children were awarded with prizes in form of crayon sets, pencils and erasers for participating and coming up with such creative cards. After a tiring day of fun card making competition the children also got treats in form of food packets and chocolates. To illuminate the houses in the slum our team also distributed Diyas among 40 households. The children gifted the cards made by them, to their parents. The parents couldn’t feel more elated and prouder of their kids. Amongst all the hustle bustle of crackers and fireworks we forget the true meaning of Diwali. This festival signifies the triumph of good over evil. So, together let us pledge to transform lives by spreading the light of Diwali to the households that lie under the shadows of misfortune and negligence.
@@ -527,5 +538,26 @@ display: flex;
       $('body').css('overflow', 'none');
       $('#' + el).addClass('popupOpen');
     }
+    function width() {
+    var win = $(this);
+    if (win.width() > 1000) {   
+      if ($('.kes-image').is(':empty')) { 
+      $('.kes-image').append('<img src="./img/diwali/diwali_right.jpg" class="img-responsive" width="100%"/>');
+      }
+      $('.kes-image-mobile').empty();
+  }
+    if(win.width()<1000){
+      $('.kes-image').empty();
+      if ($('.kes-image-mobile').is(':empty')) {
+        $('.kes-image-mobile').append('<img src="./img/diwali/diwali_right.jpg" class="img-responsive" width="100%"/>');
+    }
+  }
+}
+  $(document).ready(() => {
+      width();
+      });
+  window.addEventListener('resize', () => {
+      width();
+  });
   </script>
 </html>
