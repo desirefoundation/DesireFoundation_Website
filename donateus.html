@@ -1,239 +1,257 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="icon" href="img/logo.png" type="image/x-icon" />
-    <title>Desire Foundation</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-    <link rel="stylesheet" href="css/navbar.css" />
-    <script defer src="js/index.js"></script>
-    <script src="https://js.instamojo.com/v1/checkout.js"></script>
-    <script>
-      function startScroll(event, el) {
-        event.preventDefault();
-        $("body").css("overflow", "");
-        $("#" + el).removeClass("popupOpen");
-        $("#you" + el).attr("src", $("#you" + el).attr("src"));
-      }
-      function stopScroll(event, el) {
-        event.preventDefault();
-        $("body").css("overflow", "none");
-        $("#" + el).addClass("popupOpen");
-      }
-    </script>
-  </head>
-  <style>
-    body {
-      font-family: "Spectral", sans-serif;
-    }
-    .du-main {
-      background-image: url(./img/donate_us_bg.jpg);
-      background-size: cover;
-      height: 45rem;
-    }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="icon" href="img/logo.png" type="image/x-icon" />
+        <title>Desire Foundation</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+        <link rel="stylesheet" href="css/navbar.css" />
+        <script defer src="js/index.js"></script>
+        <script src="https://js.instamojo.com/v1/checkout.js"></script>
+        <script>
+            function startScroll(event, el) {
+                event.preventDefault();
+                $("body").css("overflow", "");
+                $("#" + el).removeClass("popupOpen");
+                $("#you" + el).attr("src", $("#you" + el).attr("src"));
+            }
+            function stopScroll(event, el) {
+                event.preventDefault();
+                $("body").css("overflow", "none");
+                $("#" + el).addClass("popupOpen");
+            }
+        </script>
+    </head>
+    <style>
+        body {
+            font-family: "Spectral", sans-serif;
+        }
+        .du-main {
+            background-image: url(./img/donate_us_bg.jpg);
+            background-size: cover;
+            height: 45rem;
+        }
 
-    .dn-content {
-      margin-top: 60px;
-      color: black;
-      text-align: center;
-      width: 85%;
-      padding: 28px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
+        .dn-content {
+            margin-top: 60px;
+            color: black;
+            text-align: center;
+            width: 85%;
+            padding: 28px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
 
-    input[type="number"] {
-      height: 60px;
-      width: 50%;
-      margin-left: 25%;
-      margin-top: 25px;
-      opacity: 0.8;
-      border: 1px solid;
-    }
+        input[type="number"] {
+            height: 60px;
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 25px;
+            opacity: 0.8;
+            border: 1px solid;
+        }
 
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
-    .transparent-button {
-      background-color: #000089;
-      border-color: black;
-      color: rgba(255, 255, 255, 255);
-      padding: 0.75rem;
-      font-weight: bold;
-    }
-    .transparent-button:hover {
-      color: #000;
-      background-color: #fff;
-    }
-    .transparent-button:not(:first-child) {
-      margin-left: 10px;
-    }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .transparent-button {
+            background-color: #000089;
+            border-color: black;
+            color: rgba(255, 255, 255, 255);
+            padding: 0.75rem;
+            font-weight: bold;
+        }
+        .transparent-button:hover {
+            color: #000;
+            background-color: #fff;
+        }
+        .transparent-button:not(:first-child) {
+            margin-left: 10px;
+        }
 
-    .popup {
-      height: 100vh;
-      width: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.8);
-      z-index: 342565;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s;
-    }
+        .popup {
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 2;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+        }
 
-    .popup.popupOpen {
-      opacity: 1;
-      visibility: visible;
-    }
+        .popup.popupOpen {
+            opacity: 1;
+            visibility: visible;
+        }
 
-    .popup__content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 75%;
-      background-color: #fff;
-      border-radius: 3px;
-      display: -ms-flexbox;
-      display: flex;
-      overflow: hidden;
-      opacity: 0;
-      -ms-transform: translate(-50%, -50%) scale(0);
-      transform: translate(-50%, -50%) scale(0);
-      transition: all 0.5s 0.2s;
-      height: 90%;
-      background: 0 0;
-    }
-    .popup.popupOpen .popup__content {
-      opacity: 1;
-      visibility: visible;
-      -ms-transform: translate(-50%, -50%) scale(1);
-      transform: translate(-50%, -50%) scale(1);
-    }
-    .popup__close:link,
-    .popup__close:visited {
-      position: absolute;
-      top: 2%;
-      right: 4%;
-      font-size: 3rem;
-      text-decoration: none;
-      display: inline-block;
-      transition: all 0.3s;
-      line-height: 1;
-    }
-    .popup__content.instaMojo {
-      width: 25%;
-      min-width: 350px;
-    }
-  </style>
-  <body>
-    <div class="du-main">
-      <div style="padding: 1.2rem;" class="nav-container"></div>
-      <div class="container">
-        <div class="af-row row">
-          <div class="dn-column col-lg-6 col-sm-12">
-            <div class="dn-content">
-              <i
-                class="fas fa-hand-holding-heart"
-                style="font-size: 60px; margin-bottom: 25px; color: #000089;"
-              ></i>
-              <h1 style="color: #016c31;">
-                Thankyou! For being<br />the reason I smile!
-              </h1>
-              <form>
-                <div class="form-group">
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="inputNumber"
-                    aria-describedby="donateamount"
-                    placeholder="Enter amount"
-                  />
-                  <p style="margin-top: 10px;">Show you care by donating your Share</p>
-                  <button
-                    type="submit"
-                    class="btn transparent-button"
-                    onclick="stopScroll(event,'paytmPopup');"
-                  >
-                    Pay by Paytm
-                  </button>
-                  <button
-                    type="submit"
-                    class="btn transparent-button"
-                    onclick="stopScroll(event,'instaMojoPaymentPopup');"
-                  >
-                    Pay by Instamojo
-                  </button>
+        .popup__content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 75%;
+            background-color: #fff;
+            border-radius: 3px;
+            display: -ms-flexbox;
+            display: flex;
+            overflow: hidden;
+            opacity: 0;
+            -ms-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+            transition: all 0.5s 0.2s;
+            height: 90%;
+            background: 0 0;
+        }
+        .popup.popupOpen .popup__content {
+            opacity: 1;
+            visibility: visible;
+            -ms-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .popup__close:link,
+        .popup__close:visited {
+            position: absolute;
+            top: 2%;
+            right: 4%;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            line-height: 1;
+        }
+        .popup__content.instaMojo {
+            width: 25%;
+            min-width: 350px;
+        }
+
+        @media screen and (max-width: 900px) {
+            .dn-content {
+                width: 100%;
+            }
+        }
+    </style>
+    <body>
+		<div class="nav-container"></div>
+		<div class="du-main">
+            <div class="container">
+                <div class="af-row row">
+                    <div class="dn-column col-lg-6 col-sm-12">
+                        <div class="dn-content">
+                            <i
+                                class="fas fa-hand-holding-heart"
+                                style="
+                                    font-size: 60px;
+                                    margin-bottom: 25px;
+                                    color: #000089;
+                                "
+                            ></i>
+                            <h1 style="color: #016c31;">
+                                Thankyou! For being<br />the reason I smile!
+                            </h1>
+                            <form>
+                                <div class="form-group">
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        id="inputNumber"
+                                        aria-describedby="donateamount"
+                                        placeholder="Enter amount"
+                                    />
+                                    <p style="margin-top: 10px;">
+                                        Show you care by donating your Share
+                                    </p>
+                                    <button
+                                        type="submit"
+                                        class="btn transparent-button"
+                                        onclick="stopScroll(event,'paytmPopup');"
+                                    >
+                                        Pay by Paytm
+                                    </button>
+                                    <br /><br />
+                                    <button
+                                        type="submit"
+                                        class="btn transparent-button"
+                                        onclick="stopScroll(event,'instaMojoPaymentPopup');"
+                                    >
+                                        Pay by Instamojo
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="popup" id="instaMojoPaymentPopup">
+                                <a
+                                    href="javascript:;"
+                                    class="popup__close"
+                                    id="close"
+                                    onclick="startScroll(event,'instaMojoPaymentPopup');"
+                                    >&times;</a
+                                >
+                                <div class="popup__content instaMojo">
+                                    <iframe
+                                        class="iframe"
+                                        style="
+                                            width: 100%;
+                                            height: 100%;
+                                            border: none;
+                                        "
+                                        src="https://www.instamojo.com/@desirefoundation?checkout=remote&amp;iframe=1&amp;embed=form"
+                                        seamless=""
+                                        id="imojo-rc-iframe"
+                                    ></iframe>
+                                </div>
+                            </div>
+                            <div class="popup" id="paytmPopup">
+                                <a
+                                    href="javascript:;"
+                                    class="popup__close"
+                                    id="close"
+                                    onclick="startScroll(event,'paytmPopup');"
+                                    >&times;</a
+                                >
+
+                                <div class="popup__content">
+                                    <img
+                                        src="./img/paytm_image.jpg"
+                                        style="
+                                            width: 100%;
+                                            object-fit: contain;
+                                        "
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </form>
-              <div class="popup" id="instaMojoPaymentPopup">
-                <a
-                  href="javascript:;"
-                  class="popup__close"
-                  id="close"
-                  onclick="startScroll(event,'instaMojoPaymentPopup');"
-                  >&times;</a
-                >
-                <div class="popup__content instaMojo">
-                  <iframe
-                    class="iframe"
-                    style="width: 100%; height: 100%; border: none;"
-                    src="https://www.instamojo.com/@desirefoundation?checkout=remote&amp;iframe=1&amp;embed=form"
-                    seamless=""
-                    id="imojo-rc-iframe"
-                  ></iframe>
-                </div>
-              </div>
-              <div class="popup" id="paytmPopup">
-                <a
-                  href="javascript:;"
-                  class="popup__close"
-                  id="close"
-                  onclick="startScroll(event,'paytmPopup');"
-                  >&times;</a
-                >
-
-                <div class="popup__content">
-                  <img
-                    src="./img/paytm_image.jpg"
-                    style="width: 100%; object-fit: contain;"
-                  />
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="footer-container"></div>
-  </body>
+        <div class="footer-container"></div>
+    </body>
 </html>
