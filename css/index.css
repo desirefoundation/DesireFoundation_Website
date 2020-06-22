@@ -28,9 +28,8 @@ body {
 
 .home .content {
   margin-left: 5rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  height: 31.6rem;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
   position: relative;
   display: flex;
   flex-direction: column;
