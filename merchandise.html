@@ -1,405 +1,413 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="icon" href="img/logo.png" type="image/x-icon" />
-    <title>Desire Foundation</title>
-  </head>
-  <style>
-    .pc-top-container {
-      background-image: url('../img/merchandise.jpg');
-      height: 35rem;
-      background-size: cover;
-    }
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/navbar.css" />
+		<link rel="icon" href="img/logo.png" type="image/x-icon" />
+		<title>Desire Foundation</title>
+	</head>
+	<style>
+		.pc-top-container {
+			background-image: url("../img/merchandise.jpg");
+			height: 35rem;
+			background-size: cover;
+		}
 
-    .pc-main {
-      position: absolute;
-      left: 50%;
-      font-size: 5rem;
-      font-family: 'Playfair Display', serif;
-      font-weight: 300;
-      color: white;
-    }
+		.pc-main {
+			position: absolute;
+			left: 50%;
+			font-size: 5rem;
+			font-family: "Playfair Display", serif;
+			font-weight: 300;
+			color: white;
+		}
 
-    .pc-content {
-      padding-top: 50px;
-      background-color: #f6f6f7;
-    }
+		.pc-content {
+			padding-top: 50px;
+			background-color: #f6f6f7;
+		}
 
-    .image img {
-      width: 100%;
-    }
+		.image img {
+			width: 100%;
+		}
 
-    .image {
-      position: relative;
-    }
+		.image {
+			position: relative;
+		}
 
-    .contentWrapper {
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 1.5rem;
-      color: #fff;
+		.contentWrapper {
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0.8);
+			padding: 1.5rem;
+			color: #fff;
 
-      visibility: none;
-      opacity: 0;
-      transition: all 0.5s;
-    }
+			visibility: none;
+			opacity: 0;
+			transition: all 0.5s;
+		}
 
-    .image:hover .contentWrapper {
-      visibility: visible;
-      opacity: 1;
-    }
-    .col-lg-4 {
-      padding: 20px;
-    }
+		.image:hover .contentWrapper {
+			visibility: visible;
+			opacity: 1;
+		}
+		.col-lg-4 {
+			padding: 20px;
+		}
 
-    @media screen and (max-width: 900px){
-      .pc-main{
-        position: static;
-        text-align: center;
-        font-size: 4rem;
-        margin-top: 3rem;
-      }
-    }
+		@media screen and (max-width: 900px) {
+			.pc-main {
+				position: static;
+				text-align: center;
+				font-size: 4rem;
+				margin-top: 3rem;
+			}
+		}
 
-    @media screen and (max-width: 500px){
-      .pc-main{
-        font-size: 3rem;
-      }
-    }
-  </style>
-  <body>
-    <div class="pc-top-container">
-      <div style="padding: 1.2rem;" class="nav-container"></div>
-      <h2 class="pc-main" style="text-shadow: 2px 2px #000000;">CATALOGUE</h2>
-    </div>
-    <div class="pc-content">
-      <div class="container">
-        <div class="row">
-          <article class="col-lg-4">
-            <div
-              class="image"
-              style="
-                background-image: url('img/Copies/1.jpg');
-                height: 450px;
-                background-size: cover;
-              "
-            >
-              <div class="contentWrapper">
-                <div class="date">
-                  <span class="day">Nov</span>
-                  <span class="month">2019</span>
-                </div>
-                <div>
-                  <h3>Netflix Edition</h3>
-                  <p>
-                    Let's make learning a little more fun.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="col-lg-4">
-            <div
-              class="image"
-              style="
-                background-image: url('img/Copies/2.jpg');
-                height: 450px;
-                background-size: cover;
-              "
-            >
-              <div class="contentWrapper">
-                <div class="date">
-                  <span class="day">July</span>
-                  <span class="month">2019</span>
-                </div>
-                <div>
-                  <h3>PUBG Edition</h3>
-                  <p>
-                    Who says social work is boring.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="col-lg-4">
-            <div
-              class="image"
-              style="
-                background-image: url('img/Copies/3.jpg');
-                height: 450px;
-                background-size: cover;
-                background-position: center;
-              "
-            >
-              <div class="contentWrapper">
-                <div class="date">
-                  <span class="day">Nov</span>
-                  <span class="month">2018</span>
-                </div>
-                <div>
-                  <h3>F.R.I.E.N.D.S</h3>
-                  <p>
-                    Could this "BE" any better?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="row">
-          <article class="col-lg-4">
-            <div
-              class="image"
-              style="
-                background-image: url('img/Copies/4.jpg');
-                height: 450px;
-                background-size: cover;
-                background-position: center center;
-              "
-            >
-              <div class="contentWrapper">
-                <div class="date">
-                  <span class="day">July</span>
-                  <span class="month">2018</span>
-                </div>
-                <div>
-                  <h3>Sherlock Edition</h3>
-                  <p>
-                    A flavour of 221B, Baker Street in your notebooks.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="col-lg-4">
-            <div
-              class="image"
-              style="
-                background-image: url('img/Copies/5.jpg');
-                height: 450px;
-                background-size: cover;
-                background-position: center center;
-              "
-            >
-              <div class="contentWrapper">
-                <div class="date">
-                  <span class="day">Nov</span>
-                  <span class="month">2017</span>
-                </div>
-                <div>
-                  <h3>Harry Potter</h3>
-                  <p>
-                    Happiness can be found in the darkest of places, if only one
-                    remembers to turn on the light.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="col-lg-4">
-            <div
-              class="image"
-              style="
-                background-image: url('img/Copies/6.jpg');
-                height: 450px;
-                background-size: cover;
-                background-position: center center;
-              "
-            >
-              <div class="contentWrapper">
-                <div class="date">
-                  <span class="day">July</span>
-                  <span class="month">2017</span>
-                </div>
-                <div>
-                  <h3>The Face of India</h3>
-                  <p>
-                    Give a future as bright as their eyes.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="row">
-          <div class="row">
-            <article class="col-lg-4">
-              <div
-                class="image"
-                style="
-                  background-image: url('img/Copies/7.jpg');
-                  height: 450px;
-                  background-size: cover;
-                "
-              >
-                <div class="contentWrapper">
-                  <div class="date">
-                    <span class="day">Nov</span>
-                    <span class="month">2015</span>
-                  </div>
-                  <div>
-                    <h3>Dedicated to APJ Abdul Kalam</h3>
-                    <p>
-                      Great dreams transcend times.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="col-lg-4">
-              <div
-                class="image"
-                style="
-                  background-image: url('img/Copies/8.jpg');
-                  height: 450px;
-                  background-size: cover;
-                "
-              >
-                <div class="contentWrapper">
-                  <div class="date">
-                    <span class="day">April</span>
-                    <span class="month">2017</span>
-                  </div>
-                  <div>
-                    <h3>Dedicated to the kids of Desire</h3>
-                    <p>
-                      Teaching kids what counts.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="col-lg-4">
-              <div
-                class="image"
-                style="
-                  background-image: url('img/Copies/9.jpg');
-                  height: 450px;
-                  background-size: cover;
-                  background-position: center;
-                "
-              >
-                <div class="contentWrapper">
-                  <div class="date">
-                    <span class="day">Jan</span>
-                    <span class="month">2017</span>
-                  </div>
-                  <div>
-                    <h3>Winning Over Poverty With Humanity</h3>
-                    <p>
-                      Notebook that will empower you as well people around you.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-          <article class="col-lg-4">
-            <div
-              class="image"
-              style="
-                background-image: url('img/Copies/10.jpg');
-                height: 450px;
-                background-size: cover;
-                background-position: left center;
-              "
-            >
-              <div class="contentWrapper">
-                <div class="date">
-                  <span class="day">July</span>
-                  <span class="month">2016</span>
-                </div>
-                <div>
-                  <h3>Melancholy of deprivation</h3>
-                  <p>
-                    Light of education for slum children.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="col-lg-4">
-            <div
-              class="image"
-              style="
-                background-image: url('img/Copies/11.jpg');
-                height: 450px;
-                background-size: cover;
-                background-position: left center;
-              "
-            >
-              <div class="contentWrapper">
-                <div class="date">
-                  <span class="day">Oct</span>
-                  <span class="month">2016</span>
-                </div>
-                <div>
-                  <h3>Education Above All</h3>
-                  <p>
-                    Bring equality in your notebooks as well.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="col-lg-4">
-            <div
-              class="image"
-              style="
-                background-image: url('img/Copies/12.jpg');
-                height: 450px;
-                background-position: center;
-                background-size: cover;
-              "
-            >
-              <div class="contentWrapper">
-                <div class="date">
-                  <span class="day">March</span>
-                  <span class="month">2016</span>
-                </div>
-                <div>
-                  <h3>Holi Edition</h3>
-                  <p>
-                    The color of love.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-    <div class="footer-container"></div>
-  </body>
+		@media screen and (max-width: 500px) {
+			.pc-main {
+				font-size: 3rem;
+			}
+		}
+	</style>
+	<body>
+		<div class="pc-top-container">
+			<div style="padding: 1.2rem;" class="nav-container"></div>
+			<h2 class="pc-main" style="text-shadow: 2px 2px #000000;">
+				CATALOGUE
+			</h2>
+		</div>
+		<div class="pc-content">
+			<div class="container">
+				<div class="row">
+					<article class="col-lg-4">
+						<div
+							class="image"
+							style="
+								background-image: url('img/Copies/1.jpg');
+								height: 450px;
+								background-size: cover;
+							"
+						>
+							<div class="contentWrapper">
+								<div class="date">
+									<span class="day">Nov</span>
+									<span class="month">2019</span>
+								</div>
+								<div>
+									<h3>Netflix Edition</h3>
+									<p>
+										Let's make learning a little more fun.
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="col-lg-4">
+						<div
+							class="image"
+							style="
+								background-image: url('img/Copies/2.jpg');
+								height: 450px;
+								background-size: cover;
+							"
+						>
+							<div class="contentWrapper">
+								<div class="date">
+									<span class="day">July</span>
+									<span class="month">2019</span>
+								</div>
+								<div>
+									<h3>PUBG Edition</h3>
+									<p>
+										Who says social work is boring.
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="col-lg-4">
+						<div
+							class="image"
+							style="
+								background-image: url('img/Copies/3.jpg');
+								height: 450px;
+								background-size: cover;
+								background-position: center;
+							"
+						>
+							<div class="contentWrapper">
+								<div class="date">
+									<span class="day">Nov</span>
+									<span class="month">2018</span>
+								</div>
+								<div>
+									<h3>F.R.I.E.N.D.S</h3>
+									<p>
+										Could this "BE" any better?
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="row">
+					<article class="col-lg-4">
+						<div
+							class="image"
+							style="
+								background-image: url('img/Copies/4.jpg');
+								height: 450px;
+								background-size: cover;
+								background-position: center center;
+							"
+						>
+							<div class="contentWrapper">
+								<div class="date">
+									<span class="day">July</span>
+									<span class="month">2018</span>
+								</div>
+								<div>
+									<h3>Sherlock Edition</h3>
+									<p>
+										A flavour of 221B, Baker Street in your
+										notebooks.
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="col-lg-4">
+						<div
+							class="image"
+							style="
+								background-image: url('img/Copies/5.jpg');
+								height: 450px;
+								background-size: cover;
+								background-position: center center;
+							"
+						>
+							<div class="contentWrapper">
+								<div class="date">
+									<span class="day">Nov</span>
+									<span class="month">2017</span>
+								</div>
+								<div>
+									<h3>Harry Potter</h3>
+									<p>
+										Happiness can be found in the darkest of
+										places, if only one remembers to turn on
+										the light.
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="col-lg-4">
+						<div
+							class="image"
+							style="
+								background-image: url('img/Copies/6.jpg');
+								height: 450px;
+								background-size: cover;
+								background-position: center center;
+							"
+						>
+							<div class="contentWrapper">
+								<div class="date">
+									<span class="day">July</span>
+									<span class="month">2017</span>
+								</div>
+								<div>
+									<h3>The Face of India</h3>
+									<p>
+										Give a future as bright as their eyes.
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="row">
+					<div class="row">
+						<article class="col-lg-4">
+							<div
+								class="image"
+								style="
+									background-image: url('img/Copies/7.jpg');
+									height: 450px;
+									background-size: cover;
+								"
+							>
+								<div class="contentWrapper">
+									<div class="date">
+										<span class="day">Nov</span>
+										<span class="month">2015</span>
+									</div>
+									<div>
+										<h3>Dedicated to APJ Abdul Kalam</h3>
+										<p>
+											Great dreams transcend times.
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="col-lg-4">
+							<div
+								class="image"
+								style="
+									background-image: url('img/Copies/8.jpg');
+									height: 450px;
+									background-size: cover;
+								"
+							>
+								<div class="contentWrapper">
+									<div class="date">
+										<span class="day">April</span>
+										<span class="month">2017</span>
+									</div>
+									<div>
+										<h3>Dedicated to the kids of Desire</h3>
+										<p>
+											Teaching kids what counts.
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="col-lg-4">
+							<div
+								class="image"
+								style="
+									background-image: url('img/Copies/9.jpg');
+									height: 450px;
+									background-size: cover;
+									background-position: center;
+								"
+							>
+								<div class="contentWrapper">
+									<div class="date">
+										<span class="day">Jan</span>
+										<span class="month">2017</span>
+									</div>
+									<div>
+										<h3>
+											Winning Over Poverty With Humanity
+										</h3>
+										<p>
+											Notebook that will empower you as
+											well people around you.
+										</p>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+					<article class="col-lg-4">
+						<div
+							class="image"
+							style="
+								background-image: url('img/Copies/10.jpg');
+								height: 450px;
+								background-size: cover;
+								background-position: left center;
+							"
+						>
+							<div class="contentWrapper">
+								<div class="date">
+									<span class="day">July</span>
+									<span class="month">2016</span>
+								</div>
+								<div>
+									<h3>Melancholy of deprivation</h3>
+									<p>
+										Light of education for slum children.
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="col-lg-4">
+						<div
+							class="image"
+							style="
+								background-image: url('img/Copies/11.jpg');
+								height: 450px;
+								background-size: cover;
+								background-position: left center;
+							"
+						>
+							<div class="contentWrapper">
+								<div class="date">
+									<span class="day">Oct</span>
+									<span class="month">2016</span>
+								</div>
+								<div>
+									<h3>Education Above All</h3>
+									<p>
+										Bring equality in your notebooks as
+										well.
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="col-lg-4">
+						<div
+							class="image"
+							style="
+								background-image: url('img/Copies/12.jpg');
+								height: 450px;
+								background-position: center;
+								background-size: cover;
+							"
+						>
+							<div class="contentWrapper">
+								<div class="date">
+									<span class="day">March</span>
+									<span class="month">2016</span>
+								</div>
+								<div>
+									<h3>Holi Edition</h3>
+									<p>
+										The color of love.
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+		<div class="footer-container"></div>
+	</body>
 
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"
-  ></script>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"
+	></script>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="js/index.js"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="js/index.js"></script>
 </html>
