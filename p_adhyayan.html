@@ -123,6 +123,16 @@
 			}
 		}
 
+		.graph {
+			width: 600px;
+		}
+
+		@media screen and (max-width: 600px){
+			.graph {
+				width: 360px;
+			}
+		}
+
 		.play {
 			height: 60px;
 			width: 60px;
@@ -402,12 +412,11 @@
 					</div>
 					<div class="col-md">
 						<div
-							class="chart-container"
+							class="chart-container graph"
 							style="
 								position: relative;
 								margin: auto;
 								height: 350px;
-								width: 600px;
 								align-items: center;
 								display: flex;
 							"
