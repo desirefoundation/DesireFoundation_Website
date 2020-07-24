@@ -1,452 +1,597 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-    />
-    
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-    <link rel="stylesheet" href="css/navbar.css" />
-    <script defer src="js/index.js"></script>
-    <link rel="icon" href="img/logo.png" type="image/x-icon" />
-    <title>Desire Foundation</title>
-  </head>
-  <style>
-    body {
-      font-family: 'Spectral', sans-serif;
-    }
-    .ahaar-main-body {
-      background-color: #f6f6f7;
-    }
-    .header-image {
-      background-image: url(./img/aahar/aahar_header.jpg);
-      height: 35rem;
-      background-size: cover;
-    }
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+		/>
 
-    .ahaar-body {
-      margin-top: -125px;
-      background-color: white;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-    .ahaar-header {
-      text-align: center;
-      font-size: 50px;
-      color: #490d00;
-    }
-    .ahaar-sub-header {
-      text-align: left;
-      padding-left: 50px;
-      font-size: 30px;
-      color: #490d00;
-      margin-top: 50px;
-    }
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+		<link rel="stylesheet" href="css/navbar.css" />
+		<script defer src="js/index.js"></script>
+		<link rel="icon" href="img/logo.png" type="image/x-icon" />
+		<title>Desire Foundation</title>
+	</head>
+	<style>
+		body {
+			font-family: "Spectral", sans-serif;
+		}
+		.ahaar-main-body {
+			background-color: #f6f6f7;
+		}
+		.header-image {
+			background-image: url(./img/aahar/aahar_header.jpg);
+			height: 35rem;
+			background-size: cover;
+		}
 
-    .ahaar-sub-mid-header {
-      text-align: center;
-      padding-top: 25px;
-      font-size: 30px;
-      color: #490d00;
-      margin-top: 50px;
-    }
+		.ahaar-body {
+			margin-top: -125px;
+			background-color: white;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+				0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		.ahaar-header {
+			text-align: center;
+			font-size: 50px;
+			color: #490d00;
+		}
+		.ahaar-sub-header {
+			text-align: left;
+			padding-left: 50px;
+			font-size: 30px;
+			color: #490d00;
+			margin-top: 50px;
+		}
 
-    .quote_nm{
-      text-align: right;
-      padding-right: 79px;
-      margin-top: -10px;
-      color: darkgrey;
-      font-size: 18px;
-    }
+		.ahaar-sub-mid-header {
+			text-align: center;
+			padding-top: 25px;
+			font-size: 30px;
+			color: #490d00;
+			margin-top: 50px;
+		}
 
-    .ahaar-f-para {
-      padding: 25px 50px;
-    }
-    .ahaar-row {
-      padding: 25px 0px;
-    }
+		.quote_nm {
+			text-align: right;
+			padding-right: 79px;
+			margin-top: -10px;
+			color: darkgrey;
+			font-size: 18px;
+		}
 
-    .ahaar-image{
-      padding-right: 50px;
-    }
+		.ahaar-f-para {
+			padding: 25px 50px;
+		}
+		.ahaar-row {
+			padding: 25px 0px;
+		}
 
-    .ahaar-sub-cont-header{
-      padding-top: 25px;
-    }
+		.ahaar-image {
+			padding-right: 50px;
+		}
 
-    .ahaar-s-para {
-      text-align: center;
-      padding-top: 30px;
-    }
-    #ahaar-gallery-carousel {
-      padding: 0px 50px;
-      margin-top: 50px;
-    }
-    .ahaar-gal-img {
-      height: 400px;
-      object-fit: cover;
-    }
+		.ahaar-sub-cont-header {
+			padding-top: 25px;
+		}
 
-    .ahaar-video-image{
-      padding-left:50px
-    }
+		.ahaar-s-para {
+			text-align: center;
+			padding-top: 30px;
+		}
+		#ahaar-gallery-carousel {
+			padding: 0px 50px;
+			margin-top: 50px;
+		}
+		.ahaar-gal-img {
+			height: 400px;
+			object-fit: cover;
+		}
 
-     
- .teams-main {
-  position: absolute;
-  left: 40%;
-  top: 25%;
-  transform: translate(-50%, -50%);
-  font-size: 5rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: 300;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
+		.ahaar-video-image {
+			padding-left: 50px;
+		}
 
- .team-top-container {
-  background-image: url('../img/teams_cover.jpg');
-  padding-bottom: 35rem;
-  background-size: cover;
-  background-position: center;
-}
- 
-.test_header {
-	color: #333;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: "Roboto", sans-serif;
-	font-weight: bold;
-	position: relative;
-	margin: 30px 0 60px;
-}
-.test_header::after {
-	content: "";
-	width: 100px;
-	position: absolute;
-	margin: 0 auto;
-	height: 3px;
-	background: #8fbc54;
-	left: 0;
-	right: 0;
-	bottom: -10px;
-}
-.col-center {
-	margin: 0 auto;
-	float: none !important;
-}
-.carousel {
-	margin: 50px auto;
-	padding: 0 70px;
-}
-.carousel .item {
-	color: #999;
-	font-size: 14px;
-    text-align: center;
-	overflow: hidden;
-    min-height: 290px;
-}
-.carousel .item .img-box {
-	width: 135px;
-	height: 135px;
-	margin: 0 auto;
-	padding: 5px;
-	border: 1px solid #ddd;
-	border-radius: 50%;
-}
-.carousel .img-box img {
-	width: 100%;
-	height: 100%;
-	display: block;
-	border-radius: 50%;
-}
-.carousel .testimonial {
-	padding: 30px 0 10px;
-}
-.carousel .overview {	
-	font-style: italic;
-}
-.carousel .overview b {
-	text-transform: uppercase;
-	color: #7AA641;
-}
-.carousel .carousel-control {
-	width: 40px;
-    height: 40px;
-    margin-top: -20px;
-    top: 50%;
-	background: none;
-}
-.carousel-control i {
-    font-size: 68px;
-	line-height: 42px;
-    position: absolute;
-    display: inline-block;
-	color: rgba(0, 0, 0, 0.8);
-    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
-}
-.carousel .p-testimonial {
-	bottom: -40px;
-}
-.p-testimonial li, .p-testimonial li.active {
-	width: 20px;
-	height: 0px;
-	margin: 1px 3px;
-	border-radius: 50%;
-}
-.p-testimonial li {	
-	background: #999;
-	border-color: transparent;
-	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
-}
-.p-testimonial li.active {	
-	background: #555;		
-	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
-}
-.carousel .p-testimonial {
-    bottom: -55px;
-}
-.carousel-inner {
-display: flex;
-}
+		.teams-main {
+			position: absolute;
+			left: 40%;
+			top: 25%;
+			transform: translate(-50%, -50%);
+			font-size: 5rem;
+			font-family: "Playfair Display", serif;
+			font-weight: 300;
+			color: white;
+			display: flex;
+			flex-direction: column;
+		}
 
-#myCarousel .carousel-item.active,
-#myCarousel .carousel-item-next,
-#myCarousel .carousel-item-prev {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
-#myCarousel .carousel-item {
-  display: block;
-  opacity: 0;
-  visibility: hidden;
-  transition: transform, opacity .6s ease-in-out,-webkit-transform .6s ease-in-out;
-}
-.ahaar-image-mobile{
-  padding-left: 5%;
-  padding-right: 5%;
-}
-  </style>
-  <body class="ahaar-main-body">
-    <div class="header-image">
-      <div style="padding: 1.2rem;" class="nav-container"></div>
-    </div>
-    <div class="ahaar-parent">
-      <div class="ahaar-body container">
-        <h1 class="ahaar-header"><b>Aahar</b></h1>
-        <div class="ahaar-image-mobile">
-          <img
-            src="./img/aahar/aahar_right.jpg"
-            class="img-responsive"
-            width="100%"
-          />
-        </div>
-        <h3 class="ahaar-sub-header"><b>The Beginning</b></h3>
-        <p class="ahaar-f-para">
-          We see places lit up, with glee and we know, it's the time around Dusshera, Durga Puja and Navratre!"
- Just, when whole of the country indulged itself into the festivities in the year 2017, Desire Foundation, had different plans. After great efforts, tireless hours of planning and blood-sweat hard work, we came up with this great idea, helping the kids celebrate this occasion with equal happiness! 
-On the 30th of September and 1st of October, Desire Foundation had organized a two-day Food Donation drive by the name "Ahaar" for the blind and homeless children across Mumbai and Durgapur. Aahar in Mumbai, was in association with BOX8, which sponsored freshly cooked, warm meal boxes, and we volunteered its distribution amongst the deserving. This was successfully completed, feeding 250 children in Mumbai and Navi Mumbai. We have always lived by the motto, that basic rights, like food, water and education should be accessible by all. And during the biggest festive season in India, they didn't back off from their responsibilities, but tried and successfully ensured a proper meal for the underprivileged kids of Mumbai. After being fed with good, warm meal, the shine in the eyes of those kids were greater than the greatest treasure. Nobody can, and should be left to enjoy with an empty stomach. 
-We are a group of very close knit, and passionate youngsters who realise our responsibility towards the society and move forward with an initiative to change and revolutionize the society, are ready to take up more such challenges.
-        </p>
-        <div class="ahaar-row row">
-          <div class="col-lg-6 col-sm-12">
-            <div class="ahaar-video-image" style="position: relative;">
-              <img
-                src="./img/aahar/aahar_left.jpg"
-                class="img-responsive"
-                width="100%"
-              />
-            </div>
-          </div>
-          <div class="col-lg-6 col-sm-12">
-            <div class="ahaar-image">
-              <img
-                src="./img/aahar/aahar_right.jpg"
-                class="img-responsive"
-                width="100%"
-              />
-            </div>
-          </div>
-        </div>
-        <h2 class="ahaar-sub-mid-header"><b>Testimonials</b></h2>
-        <div class="row">
-          <div class="col-md-8 col-center m-auto">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <!-- Carousel indicators -->
-              <ol class="p-testimonial carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-              </ol>   
-              <!-- Wrapper for carousel items -->
-              <div class="carousel-inner">
-                <div class="item carousel-item active">
-                  <div class="img-box"><img src="img/Testimonials/trisha.jpg" alt=""></div>
-                  <p class="testimonial">It was our desire to do something not done before. It was our desire to help few underprivileged and see them smile. As days passed, more friends joined us and the joy of on-boarding big names like Box8 can't be explained in words. They sponsored the food packets for all the orphans we planned to feed.  To our surprise big publicity groups joined hands to promote our event in big banners across Mumbai. It was magical. On one hand, we could see the kids eat a good meal and on the other our name was displayed in the heart of the commercial capital of India. I will cherish these moments throughout my life.
-                          </p>
-                  <p class="overview"><b>Trisha Srivastava</b>, Alumni</p>
-                </div>
-                <div class="item carousel-item">
-                  <div class="img-box"><img src="img/Testimonials/Susmita_Ghoshal.jpg" alt=""></div>
-                  <p class="testimonial">When the innocent kids in this beautiful world are neglected, when they are forced to the shadows because they are not a part of the conventional society, then organisations like Desire Foundation & Andal Pariwar stand by them. They are brought back to the light, so that they can spend a healthy and normal life just like everyone else. Andal Pariwar has changed the lives of 25 kids belonging to the underprivileged background by including them in the conventional society with providing food, health, education and entertainment. The key ingredient for making a person honest and righteous is education. Desire Foundation has helped in this educational aspect along with the other daily needs of the kids. When all around people were immersed in the festivities of Durga puja during the year 2017, Desire Foundation in collaboration with Andal Pariwar, arranged a sumptuous Aahar(meal) for the kids. On this day the kids were taken to a temple. They played and laughed against the serene backdrop of the sanctuary and we prepared a meal for them. Our goal was to see the smile on their innocent faces. Their happiness knew no bounds. We hope that these kids have a happy and peaceful future. They evolve as humans in the true sense of the term. We wish them all the best.</p>
-                  <p class="overview"><b>Sushmita Ghoshal</b>, Board Member</p>
-                </div>
-              </div>
-              <!-- Carousel controls -->
-              <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
-                <i class="fa fa-angle-left"></i>
-              </a>
-              <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
-                <i class="fa fa-angle-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <h2 class="ahaar-sub-mid-header"><b>Gallery</b></h2>
-        <div
-          id="ahaar-gallery-carousel"
-          class="carousel slide carousel-fade"
-          data-ride="carousel"
-          data-interval="3000"
-        >
-          <ol class="p-gallery carousel-indicators">
-            <li
-              data-target="#ahaar-gallery-carousel"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#ahaar-gallery-carousel" data-slide-to="1"></li>
-            <li data-target="#ahaar-gallery-carousel" data-slide-to="2"></li>
-            <li data-target="#ahaar-gallery-carousel" data-slide-to="3"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                class="ahaar-gal-img d-block w-100"
-                src="./img/aahar/aahar_1.jpg"
-                alt="First slide"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Aahar</h5>
-                <p>We can't help everyone; but everyone can help someone</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                class="ahaar-gal-img d-block w-100"
-                src="./img/aahar/aahar_2.jpg"
-                alt="Second slide"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Aahar</h5>
-                <p>Let's pledge to widen the smile on their faces</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                class="ahaar-gal-img d-block w-100"
-                src="./img/aahar/aahar_3.jpg"
-                alt="Third slide"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Aahar</h5>
-                <p>There is no gift greater than kindness</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                class="ahaar-gal-img d-block w-100"
-                src="./img/aahar/aahar_4.jpg"
-                alt="forth slide"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Aahar</h5>
-                <p>Real happiness lies here</p>
-              </div>
-            </div>
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#ahaar-gallery-carousel"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#ahaar-gallery-carousel"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <h2 class="ahaar-sub-mid-header" style = "color:darkcyan;"><q><i>If you can’t feed a hundred people, then feed just one.</i></q></h2>
-        <p class="quote_nm">-Mother Teresa</p>
-      </div>
-    </div>
-    <div class="footer-container"></div>
-  </body>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
-    function startScroll(event, el) {
-      event.preventDefault();
-      $('body').css('overflow', '');
-      $('#' + el).removeClass('popupOpen');
-      $('#you' + el).attr('src', $('#you' + el).attr('src'));
-    }
-    function stopScroll(event, el) {
-      event.preventDefault();
-      $('body').css('overflow', 'none');
-      $('#' + el).addClass('popupOpen');
-    }
-    function width() {
-    var win = $(this);
-    if (win.width() > 1000) {   
-      if ($('.ahaar-image').is(':empty')) { 
-      $('.ahaar-image').append('<img src="./img/aahar/aahar_right.jpg" class="img-responsive" width="100%"/>');
-      }
-      $('.ahaar-image-mobile').empty();
-  }
-    if(win.width()<1000){
-      $('.ahaar-image').empty();
-      if ($('.ahaar-image-mobile').is(':empty')) {
-        $('.ahaar-image-mobile').append('<img src="./img/aahar/aahar_right.jpg" class="img-responsive" width="100%"/>');
-    }
-  }
-}
-  $(document).ready(() => {
-      width();
-      });
-  window.addEventListener('resize', () => {
-      width();
-  });
-  </script>
+		.team-top-container {
+			background-image: url("../img/teams_cover.jpg");
+			padding-bottom: 35rem;
+			background-size: cover;
+			background-position: center;
+		}
+
+		.test_header {
+			color: #333;
+			text-align: center;
+			text-transform: uppercase;
+			font-family: "Roboto", sans-serif;
+			font-weight: bold;
+			position: relative;
+			margin: 30px 0 60px;
+		}
+		.test_header::after {
+			content: "";
+			width: 100px;
+			position: absolute;
+			margin: 0 auto;
+			height: 3px;
+			background: #8fbc54;
+			left: 0;
+			right: 0;
+			bottom: -10px;
+		}
+		.col-center {
+			margin: 0 auto;
+			float: none !important;
+		}
+		.carousel {
+			margin: 50px auto;
+			padding: 0 70px;
+		}
+		.carousel .item {
+			color: #999;
+			font-size: 14px;
+			text-align: center;
+			overflow: hidden;
+			min-height: 290px;
+		}
+		.carousel .item .img-box {
+			width: 135px;
+			height: 135px;
+			margin: 0 auto;
+			padding: 5px;
+			border: 1px solid #ddd;
+			border-radius: 50%;
+		}
+		.carousel .img-box img {
+			width: 100%;
+			height: 100%;
+			display: block;
+			border-radius: 50%;
+		}
+		.carousel .testimonial {
+			padding: 30px 0 10px;
+		}
+		.carousel .overview {
+			font-style: italic;
+		}
+		.carousel .overview b {
+			text-transform: uppercase;
+			color: #7aa641;
+		}
+		.carousel .carousel-control {
+			width: 40px;
+			height: 40px;
+			margin-top: -20px;
+			top: 50%;
+			background: none;
+		}
+		.carousel-control i {
+			font-size: 68px;
+			line-height: 42px;
+			position: absolute;
+			display: inline-block;
+			color: rgba(0, 0, 0, 0.8);
+			text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+		}
+		.carousel .p-testimonial {
+			bottom: -40px;
+		}
+		.p-testimonial li,
+		.p-testimonial li.active {
+			width: 20px;
+			height: 0px;
+			margin: 1px 3px;
+			border-radius: 50%;
+		}
+		.p-testimonial li {
+			background: #999;
+			border-color: transparent;
+			box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+		}
+		.p-testimonial li.active {
+			background: #555;
+			box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+		}
+		.carousel .p-testimonial {
+			bottom: -55px;
+		}
+		.carousel-inner {
+			display: flex;
+		}
+
+		#myCarousel .carousel-item.active,
+		#myCarousel .carousel-item-next,
+		#myCarousel .carousel-item-prev {
+			display: block;
+			opacity: 1;
+			visibility: visible;
+		}
+		#myCarousel .carousel-item {
+			display: block;
+			opacity: 0;
+			visibility: hidden;
+			transition: transform, opacity 0.6s ease-in-out,
+				-webkit-transform 0.6s ease-in-out;
+		}
+		.ahaar-image-mobile {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+	</style>
+	<body class="ahaar-main-body">
+		<div class="header-image">
+			<div style="padding: 1.2rem;" class="nav-container"></div>
+		</div>
+		<div class="ahaar-parent">
+			<div class="ahaar-body container">
+				<h1 class="ahaar-header"><b>Aahar</b></h1>
+				<div class="ahaar-image-mobile">
+					<img
+						src="./img/aahar/aahar_right.jpg"
+						class="img-responsive"
+						width="100%"
+					/>
+				</div>
+				<h3 class="ahaar-sub-header"><b>The Beginning</b></h3>
+				<p class="ahaar-f-para">
+					We see places lit up, with glee and we know, it's the time
+					around Dusshera, Durga Puja and Navratre!" Just, when whole
+					of the country indulged itself into the festivities in the
+					year 2017, Desire Foundation, had different plans. After
+					great efforts, tireless hours of planning and blood-sweat
+					hard work, we came up with this great idea, helping the kids
+					celebrate this occasion with equal happiness! On the 30th of
+					September and 1st of October, Desire Foundation had
+					organized a two-day Food Donation drive by the name "Ahaar"
+					for the blind and homeless children across Mumbai and
+					Durgapur. Aahar in Mumbai, was in association with BOX8,
+					which sponsored freshly cooked, warm meal boxes, and we
+					volunteered its distribution amongst the deserving. This was
+					successfully completed, feeding 250 children in Mumbai and
+					Navi Mumbai. We have always lived by the motto, that basic
+					rights, like food, water and education should be accessible
+					by all. And during the biggest festive season in India, they
+					didn't back off from their responsibilities, but tried and
+					successfully ensured a proper meal for the underprivileged
+					kids of Mumbai. After being fed with good, warm meal, the
+					shine in the eyes of those kids were greater than the
+					greatest treasure. Nobody can, and should be left to enjoy
+					with an empty stomach. We are a group of very close knit,
+					and passionate youngsters who realise our responsibility
+					towards the society and move forward with an initiative to
+					change and revolutionize the society, are ready to take up
+					more such challenges.
+				</p>
+				<div class="ahaar-row row">
+					<div class="col-lg-6 col-sm-12">
+						<div
+							class="ahaar-video-image"
+							style="position: relative;"
+						>
+							<img
+								src="./img/aahar/aahar_left.jpg"
+								class="img-responsive"
+								width="100%"
+							/>
+						</div>
+					</div>
+					<div class="col-lg-6 col-sm-12">
+						<div class="ahaar-image">
+							<img
+								src="./img/aahar/aahar_right.jpg"
+								class="img-responsive"
+								width="100%"
+							/>
+						</div>
+					</div>
+				</div>
+				<h2 class="ahaar-sub-mid-header"><b>Testimonials</b></h2>
+				<div class="row">
+					<div class="col-md-8 col-center m-auto">
+						<div
+							id="myCarousel"
+							class="carousel slide"
+							data-ride="carousel"
+						>
+							<!-- Carousel indicators -->
+							<ol class="p-testimonial carousel-indicators">
+								<li
+									data-target="#myCarousel"
+									data-slide-to="0"
+									class="active"
+								></li>
+								<li
+									data-target="#myCarousel"
+									data-slide-to="1"
+								></li>
+							</ol>
+							<!-- Wrapper for carousel items -->
+							<div class="carousel-inner">
+								<div class="item carousel-item active">
+									<div class="img-box">
+										<img
+											src="img/Testimonials/trisha.jpg"
+											alt=""
+										/>
+									</div>
+									<p class="testimonial">
+										It was our desire to do something not
+										done before. It was our desire to help
+										few underprivileged and see them smile.
+										As days passed, more friends joined us
+										and the joy of on-boarding big names
+										like Box8 can't be explained in words.
+										They sponsored the food packets for all
+										the orphans we planned to feed. To our
+										surprise big publicity groups joined
+										hands to promote our event in big
+										banners across Mumbai. It was magical.
+										On one hand, we could see the kids eat a
+										good meal and on the other our name was
+										displayed in the heart of the commercial
+										capital of India. I will cherish these
+										moments throughout my life.
+									</p>
+									<p class="overview">
+										<b>Trisha Srivastava</b>, Alumni
+									</p>
+								</div>
+								<div class="item carousel-item">
+									<div class="img-box">
+										<img
+											src="img/Testimonials/Susmita_Ghoshal.jpg"
+											alt=""
+										/>
+									</div>
+									<p class="testimonial">
+										When the innocent kids in this beautiful
+										world are neglected, when they are
+										forced to the shadows because they are
+										not a part of the conventional society,
+										then organisations like Desire
+										Foundation & Andal Pariwar stand by
+										them. They are brought back to the
+										light, so that they can spend a healthy
+										and normal life just like everyone else.
+										Andal Pariwar has changed the lives of
+										25 kids belonging to the underprivileged
+										background by including them in the
+										conventional society with providing
+										food, health, education and
+										entertainment. The key ingredient for
+										making a person honest and righteous is
+										education. Desire Foundation has helped
+										in this educational aspect along with
+										the other daily needs of the kids. When
+										all around people were immersed in the
+										festivities of Durga puja during the
+										year 2017, Desire Foundation in
+										collaboration with Andal Pariwar,
+										arranged a sumptuous Aahar(meal) for the
+										kids. On this day the kids were taken to
+										a temple. They played and laughed
+										against the serene backdrop of the
+										sanctuary and we prepared a meal for
+										them. Our goal was to see the smile on
+										their innocent faces. Their happiness
+										knew no bounds. We hope that these kids
+										have a happy and peaceful future. They
+										evolve as humans in the true sense of
+										the term. We wish them all the best.
+									</p>
+									<p class="overview">
+										<b>Sushmita Ghoshal</b>, Board Member
+									</p>
+								</div>
+							</div>
+							<!-- Carousel controls -->
+							<a
+								class="carousel-control left carousel-control-prev"
+								href="#myCarousel"
+								data-slide="prev"
+							>
+								<i class="fa fa-angle-left"></i>
+							</a>
+							<a
+								class="carousel-control right carousel-control-next"
+								href="#myCarousel"
+								data-slide="next"
+							>
+								<i class="fa fa-angle-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<h2 class="ahaar-sub-mid-header"><b>Gallery</b></h2>
+				<div
+					id="ahaar-gallery-carousel"
+					class="carousel slide carousel-fade"
+					data-ride="carousel"
+					data-interval="3000"
+				>
+					<ol class="p-gallery carousel-indicators">
+						<li
+							data-target="#ahaar-gallery-carousel"
+							data-slide-to="0"
+							class="active"
+						></li>
+						<li
+							data-target="#ahaar-gallery-carousel"
+							data-slide-to="1"
+						></li>
+						<li
+							data-target="#ahaar-gallery-carousel"
+							data-slide-to="2"
+						></li>
+						<li
+							data-target="#ahaar-gallery-carousel"
+							data-slide-to="3"
+						></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img
+								class="ahaar-gal-img d-block w-100"
+								src="./img/aahar/aahar_1.jpg"
+								alt="First slide"
+							/>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Aahar</h5>
+								<p>
+									We can't help everyone; but everyone can
+									help someone
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img
+								class="ahaar-gal-img d-block w-100"
+								src="./img/aahar/aahar_2.jpg"
+								alt="Second slide"
+							/>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Aahar</h5>
+								<p>
+									Let's pledge to widen the smile on their
+									faces
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img
+								class="ahaar-gal-img d-block w-100"
+								src="./img/aahar/aahar_3.jpg"
+								alt="Third slide"
+							/>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Aahar</h5>
+								<p>There is no gift greater than kindness</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img
+								class="ahaar-gal-img d-block w-100"
+								src="./img/aahar/aahar_4.jpg"
+								alt="forth slide"
+							/>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Aahar</h5>
+								<p>Real happiness lies here</p>
+							</div>
+						</div>
+					</div>
+					<a
+						class="carousel-control-prev"
+						href="#ahaar-gallery-carousel"
+						role="button"
+						data-slide="prev"
+					>
+						<span
+							class="carousel-control-prev-icon"
+							aria-hidden="true"
+						></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a
+						class="carousel-control-next"
+						href="#ahaar-gallery-carousel"
+						role="button"
+						data-slide="next"
+					>
+						<span
+							class="carousel-control-next-icon"
+							aria-hidden="true"
+						></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+				<h2 class="ahaar-sub-mid-header" style="color: darkcyan;">
+					<q
+						><i
+							>If you can’t feed a hundred people, then feed just
+							one.</i
+						></q
+					>
+				</h2>
+				<p class="quote_nm">-Mother Teresa</p>
+			</div>
+		</div>
+		<div class="footer-container"></div>
+	</body>
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script>
+		function startScroll(event, el) {
+			event.preventDefault();
+			$("body").css("overflow", "");
+			$("#" + el).removeClass("popupOpen");
+			$("#you" + el).attr("src", $("#you" + el).attr("src"));
+		}
+		function stopScroll(event, el) {
+			event.preventDefault();
+			$("body").css("overflow", "none");
+			$("#" + el).addClass("popupOpen");
+		}
+		function width() {
+			var win = $(this);
+			if (win.width() > 1000) {
+				if ($(".ahaar-image").is(":empty")) {
+					$(".ahaar-image").append(
+						'<img src="./img/aahar/aahar_right.jpg" class="img-responsive" width="100%"/>'
+					);
+				}
+				$(".ahaar-image-mobile").empty();
+			}
+			if (win.width() < 1000) {
+				$(".ahaar-image").empty();
+				if ($(".ahaar-image-mobile").is(":empty")) {
+					$(".ahaar-image-mobile").append(
+						'<img src="./img/aahar/aahar_right.jpg" class="img-responsive" width="100%"/>'
+					);
+				}
+			}
+		}
+		$(document).ready(() => {
+			width();
+		});
+		window.addEventListener("resize", () => {
+			width();
+		});
+	</script>
 </html>
