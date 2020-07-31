@@ -178,7 +178,7 @@ body {
 }
 
 .container-3 {
-  background-image: url(../img/lol.jpg);
+  background-image: url(../img/enu.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding-top: 18rem;
@@ -211,7 +211,7 @@ body {
 
 .projects-top-container,
 .events-top-container {
-  background-image: url('../img/Project_Cover.jpg');
+  background-image: url('../img/events_cover.jpg');
   padding-bottom: 35rem;
   background-size: cover;
   background-position: center;

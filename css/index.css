@@ -17,7 +17,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+//commented because of not white
 .home:before {
   content: '';
   height: 100%;
@@ -28,8 +28,9 @@ body {
 
 .home .content {
   margin-left: 5rem;
-  padding-top: 15rem;
-  padding-bottom: 15rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  height: 31.6rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -52,6 +53,7 @@ a.btn {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 1px;
+  margin-left: 8rem;
 }
 
 a.btn:hover {
@@ -353,36 +355,6 @@ blockquote {
     border-width: 10px 15px 10px 0;
     border-color: transparent #f5f5f5 transparent transparent;
   }
-  .timeline-content-header {
-    margin-top: 3.4rem;
-  }
-
-  .timeline::before {
-    left: 50px;
-  }
-  .timeline .timeline-img {
-    left: 50px;
-  }
-  .timeline .timeline-content {
-    max-width: 100%;
-    width: auto;
-    margin-left: 4.5rem;
-    margin-right: 2rem;
-  }
-  .timeline .timeline-item:nth-child(even) .timeline-content {
-    float: none;
-  }
-  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    width: 0;
-    height: 0;
-    top: 30px;
-    left: -15px;
-    border-width: 10px 15px 10px 0;
-    border-color: transparent #f5f5f5 transparent transparent;
-  }
 }
 
 /* MOBILE COMPATIBILITY */
@@ -478,83 +450,6 @@ blockquote {
     background-size: cover;
   }
 
-  .home .content h2 {
-    font-size: 2rem;
-  }
-  .home .content {
-    margin-left: 1.2rem;
-  }
-
-  .home {
-    background-size: cover;
-    background-position: center;
-  }
-
-  .home .content h2 {
-    font-size: 3rem;
-  }
-
-  /* MISSION AREA */
-
-  .mission-vision-container .mission-container {
-    flex-direction: column;
-    margin: 0rem;
-  }
-
-  .mission-vision-container .mission-container .blue {
-    width: 100%;
-    padding: 0rem;
-    padding-left: 2rem;
-    padding-right: 1rem;
-    padding-bottom: 2rem;
-  }
-
-  .mission-vision-container .mission-container .blue h1 {
-    margin-top: 2rem;
-  }
-
-  .mission-vision-container .mission-container .white {
-    width: 100%;
-    padding: 0rem;
-  }
-
-  .mission-vision-container .mission-container .white img {
-    width: 100%;
-    padding: 0rem;
-    position: static;
-  }
-
-  /* VISION AREA */
-
-  .mission-vision-container .vision-container {
-    flex-direction: column-reverse;
-  }
-
-  .mission-vision-container .vision-container .blue {
-    width: 100%;
-    padding: 2rem;
-  }
-
-  .mission-vision-container .vision-container .blue h1 {
-    margin: 0rem;
-  }
-
-  .mission-vision-container .vision-container .blue h5 {
-    margin: 0rem;
-  }
-
-  .mission-vision-container .vision-container .white {
-    width: 100%;
-  }
-
-  .mission-vision-container .vision-container .white img {
-    padding: 0rem;
-    width: 100%;
-    position: static;
-  }
-}
-
-@media screen and (max-width: 400px) {
   .home .content h2 {
     font-size: 2rem;
   }
