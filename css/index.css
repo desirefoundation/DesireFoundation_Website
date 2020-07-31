@@ -318,13 +318,6 @@ blockquote {
 }
 
 @media screen and (max-width: 768px) {
-  .timeline {
-    position: relative;
-    background-image: url('../img/milestones-02.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   .timeline-content-header {
     margin-top: 3.4rem;
   }
@@ -360,14 +353,6 @@ blockquote {
 /* MOBILE COMPATIBILITY */
 
 @media screen and (max-width: 800px) {
-  .timeline {
-    position: relative;
-    background-image: url('../img/milestones-02.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   .home .content {
     margin-left: 1.2rem;
   }
@@ -442,14 +427,6 @@ blockquote {
 }
 
 @media screen and (max-width: 400px) {
-  .timeline {
-    position: relative;
-    background-image: url('../img/milestones-02.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   .home .content h2 {
     font-size: 2rem;
   }
