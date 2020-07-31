@@ -334,6 +334,231 @@
 			display: flex;
 		}
 
+#myCarousel .carousel-item.active,
+#myCarousel .carousel-item-next,
+#myCarousel .carousel-item-prev {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+#myCarousel .carousel-item {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform, opacity .6s ease-in-out,-webkit-transform .6s ease-in-out;
+}
+.kes-image-mobile{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+  </style>
+  <body class="kes-main-body">
+    <div class="header-image">
+      <div style="padding: 1.2rem;" class="nav-container"></div>
+    </div>
+    <div class="kes-parent">
+      <div class="kes-body container">
+        <h1 class="kes-header"><b>Rice Bucket Challenge</b></h1>
+        <div class="kes-image-mobile">
+          <img
+            src="./img/rbc/rbc_right.jpg"
+            class="img-responsive"
+            width="100%"
+          />
+        </div>
+        <h3 class="kes-sub-header"><b>The Idea</b></h3>
+        <p class="kes-f-para">
+          Originally initiated in Hyderabad, Desire took part in the Rice Bucket Challenge on 29th August 2014, donating 61 Kgs of rice to 61 families. Back then, Ice bucket challenge was trending and the concept was an extension of it and was more inclined towards spreading happiness to the underprivileged. Further, we nominated KAASH, NSS, Parivartan, and RON. It was a bright-eyed initiative that addressed the issue ‘absence of proper food for the deprived section of our community’. Such initiatives might bring a significant change in their nutritional requirements. It was a small but significant step towards providing a better lifestyle to the one who needs it. This challenge not only spread a trend but also created a meaningful and impactful revolution that was driven by fun and the spirit to uplift the nutritional situation of the people belonging to the backward section of the society. We are proud to be a part of this revolution and hope to come up with such innovations in the future as well. We hope this inspires all our kind viewers to step up and move forward with this trend, only then we can revolutionize it on a much larger and sustainable scale. We are also open and ready to take up any such profound and far-sighted challenges that you might suggest us. So, widen your imaginative, compassionate as well as philanthropic side and suggest away by reaching out to us. There is a social change-maker inside each of us, we just need to find it!
+        </p>
+        <div class="kes-row row">
+          <div class="col-lg-6 col-sm-12">
+            <div class="kes-video-image" style="position: relative;">
+              <img
+                src="./img/rbc/rbc_snippet.jpg"
+                class="img-responsive"
+                width="100%"
+              />
+              <a
+                href="javascript:;"
+                class="play play-big"
+                onclick="stopScroll(event,'VideoPopup');"
+              >
+                <svg class="Icon Icon--play" data-app-tmpl="Icon">
+                  <title>Play</title>
+                  <svg viewBox="0 0 17 19" id="play">
+                    <title>Triangle</title>
+                    <path d="M17 9.5L0 19V0z"></path>
+                  </svg>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="kes-image">
+              <img
+                src="./img/rbc/rbc_right.jpg"
+                class="img-responsive"
+                width="100%"
+              />
+            </div>
+          </div>
+          <div class="popup" id="VideoPopup">
+            <a
+              href="javascript:;"
+              class="popup__close"
+              id="close"
+              onclick="startScroll(event,'VideoPopup');"
+              >&times;</a
+            >
+            <div class="popup__content">
+              <iframe
+                style="width: 100%; height: 100%;"
+                id="youVideoPopup"
+                src="https://www.youtube.com/embed/coZ48iMn48M"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <h2 class="kes-sub-mid-header"><b>Testimonials</b></h2>
+        <div class="row">
+          <div class="col-md-8 col-center m-auto">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Carousel indicators -->
+              <ol class="p-testimonial carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+              </ol>   
+              <!-- Wrapper for carousel items -->
+              <div class="carousel-inner">
+                <div class="item carousel-item active">
+                  <div class="img-box"><img src="img/Testimonials/asif.JPG" alt=""></div>
+                  <p class="testimonial">Rice bucket challenge was my first project in Desire.
+                    During those days , Ice bucket challenge was trending. Although it started with a great cause, but the challenge lost its value with time.
+                    We picked up a idea from Hyderabad and donates 60 kgs of rice in a small slum near our college as a part of Rice bucket challenge.
+                    I still remember it was raining heavily, but irrespective of the adverse condition the zeal of Desire members made me fall for this organisation. 
+                    The love and humility of Desire members is the driving force for the great work they carry out.
+                          </p>
+                  <p class="overview"><b>Md. Asif</b>, Alumni</p>
+                </div>
+                <div class="item carousel-item">
+                  <div class="img-box"><img src="img/Testimonials/sayan.JPG" alt=""></div>
+                  <p class="testimonial">As I remember Rice Bucket Challenge, I realise it was an innocent poke to the then present to test the true nature of reality. It was the nascent stage of an idea, that later grew big and ferocious and chased us to the sixth year of an organisation. It was a spark that we did follow without knowing the full impact . On the end of the event we did learn a lot, not through words but thorough the needy stares and shaking hands accepting whatever was on offer.
+                    One of our talented member successfully mimicked &#34ice bucket challenge&#34 and named the event as &#34rice bucket event&#34. Though we didn&#39t bath in rice rather we ended up donating packets of rice to eight to ten households in a nearby slum on an fine evening. We were amazed to see that people of this slum accepted food from total strangers without doubt. It was not much. Now, when I look back, I understand ahaar in a way shaped the image of a left out world that got oppressed under the wheels of civilization. We were aware by then about this world but to experience it, even for a shot time,  was a totally different learning. This event had laid down the very road of our journey. After we came back we realised giving packets of rice, which was not even enough for an one time meal for a family of four or five is never a long lasting solution. So we thought of arming people with the very weapon by which they would fight their way back to light, and we could not think of anything better than education. After six years of brainstorming and hard work by our extremely talented teams, we know understand we still have miles to go.  But on our every upcoming steps, the impact of the project will be sincerely remembered and acknowledged.</p>
+                  <p class="overview"><b>Sayan Bhattacharya</b>, Social Changemaker</p>
+                </div>
+              </div>
+              <!-- Carousel controls -->
+              <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+              </a>
+              <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <h2 class="kes-sub-mid-header"><b>Gallery</b></h2>
+        <div
+          id="kes-gallery-carousel"
+          class="carousel slide carousel-fade"
+          data-ride="carousel"
+          data-interval="3000"
+        >
+          <ol class="p-gallery carousel-indicators">
+            <li
+              data-target="#kes-gallery-carousel"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#kes-gallery-carousel" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="kes-gal-img d-block w-100"
+                src="./img/rbc/rbc_gal1.jpg"
+                alt="First slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Rice Bucket Challenge</h5>
+                <p>Are we making the perfect world for the kids?</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="kes-gal-img d-block w-100"
+                src="./img/rbc/rbc_gal2.jpg"
+                alt="Second slide"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Rice Bucket Challenge</h5>
+                <p>This is what we live for - to see the pure joy in the faces</p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#kes-gallery-carousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#kes-gallery-carousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <h2 class="kes-sub-mid-header" style = "color:darkcyan;"><q><i>If you knew what I know about the power of giving, you would not let a single meal pass without sharing it in some way.</i></q></h2>
+        <p class="quote_nm">-Buddha</p>
+      </div>
+    </div>
+    <div class="footer-container"></div>
+  </body>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    function startScroll(event, el) {
+      event.preventDefault();
+      $('body').css('overflow', '');
+      $('#' + el).removeClass('popupOpen');
+      $('#you' + el).attr('src', $('#you' + el).attr('src'));
+    }
+    function stopScroll(event, el) {
+      event.preventDefault();
+      $('body').css('overflow', 'none');
+      $('#' + el).addClass('popupOpen');
+    }
+    function width() {
+    var win = $(this);
+    if (win.width() > 1000) {   
+      if ($('.kes-image').is(':empty')) { 
+      $('.kes-image').append('<img src="./img/rbc/rbc_right.jpg" class="img-responsive" width="100%"/>');
+      }
+      $('.kes-image-mobile').empty();
+  }
+    if(win.width()<1000){
+      $('.kes-image').empty();
+      if ($('.kes-image-mobile').is(':empty')) {
+        $('.kes-image-mobile').append('<img src="./img/rbc/rbc_right.jpg" class="img-responsive" width="100%"/>');
+    }
+  }
+}
+  $(document).ready(() => {
+      width();
+      });
+  window.addEventListener('resize', () => {
+      width();
+  });
+  </script>
 		#myCarousel .carousel-item.active,
 		#myCarousel .carousel-item-next,
 		#myCarousel .carousel-item-prev {
