@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,228 +13,482 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/teampage.css" />
     <title>Desire Foundation</title>
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="icon" href="img/logo.png" type="image/x-icon" />
   </head>
- <style type="text/css">
- 
- .teams-main {
-  position: absolute;
-  left: 40%;
-  top: 25%;
-  transform: translate(-50%, -50%);
-  font-size: 5rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: 300;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
+  <style type="text/css">
+    .teams-main {
+      position: absolute;
+      left: 40%;
+      top: 25%;
+      transform: translate(-50%, -50%);
+      font-size: 5rem;
+      font-family: "Playfair Display", serif;
+      font-weight: 300;
+      color: white;
+      display: flex;
+      flex-direction: column;
+    }
 
- .team-top-container {
-  background-image: url('../img/teams_cover.jpg');
-  padding-bottom: 35rem;
-  background-size: cover;
-  background-position: center;
-}
- 
-.test_header {
-	color: #333;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: "Roboto", sans-serif;
-	font-weight: bold;
-	position: relative;
-	margin: 30px 0 60px;
-}
-.test_header::after {
-	content: "";
-	width: 100px;
-	position: absolute;
-	margin: 0 auto;
-	height: 3px;
-	background: #8fbc54;
-	left: 0;
-	right: 0;
-	bottom: -10px;
-}
-.col-center {
-	margin: 0 auto;
-	float: none !important;
-}
-.carousel {
-	margin: 50px auto;
-	padding: 0 70px;
-}
-.carousel .item {
-	color: #999;
-	font-size: 14px;
-    text-align: center;
-	overflow: hidden;
-    min-height: 290px;
-}
-.carousel .item .img-box {
-	width: 135px;
-	height: 135px;
-	margin: 0 auto;
-	padding: 5px;
-	border: 1px solid #ddd;
-	border-radius: 50%;
-}
-.carousel .img-box img {
-	width: 100%;
-	height: 100%;
-	display: block;
-	border-radius: 50%;
-}
-.carousel .testimonial {
-	padding: 30px 0 10px;
-}
-.carousel .overview {	
-	font-style: italic;
-}
-.carousel .overview b {
-	text-transform: uppercase;
-	color: #7AA641;
-}
-.carousel .carousel-control {
-	width: 40px;
-    height: 40px;
-    margin-top: -20px;
-    top: 50%;
-	background: none;
-}
-.carousel-control i {
-    font-size: 68px;
-	line-height: 42px;
-    position: absolute;
-    display: inline-block;
-	color: rgba(0, 0, 0, 0.8);
-    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
-}
-.carousel .carousel-indicators {
-	bottom: -40px;
-}
-.carousel-indicators li, .carousel-indicators li.active {
-	width: 20px;
-	height: 0px;
-	margin: 1px 3px;
-	border-radius: 50%;
-}
-.carousel-indicators li {	
-	background: #999;
-	border-color: transparent;
-	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
-}
-.carousel-indicators li.active {	
-	background: #555;		
-	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
-}
-</style>
+    .test_header {
+      color: #333;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      position: relative;
+      margin: 30px 0 60px;
+    }
+    .test_header::after {
+      content: "";
+      width: 100px;
+      position: absolute;
+      margin: 0 auto;
+      height: 3px;
+      background: #8fbc54;
+      left: 0;
+      right: 0;
+      bottom: -10px;
+    }
+    .col-center {
+      margin: 0 auto;
+      float: none !important;
+    }
+
+    .carousel .item {
+      color: #999;
+      font-size: 14px;
+      text-align: center;
+      overflow: hidden;
+      min-height: 290px;
+    }
+    .carousel .item .img-box {
+      width: 135px;
+      height: 135px;
+      margin: 0 auto;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+    }
+    .carousel .img-box img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 50%;
+    }
+    .carousel .testimonial {
+      padding: 30px 0 10px;
+    }
+    .carousel .overview {
+      font-style: italic;
+    }
+    .carousel .overview b {
+      text-transform: uppercase;
+      color: #7aa641;
+    }
+    .carousel .carousel-control {
+      width: 40px;
+      height: 40px;
+      margin-top: -20px;
+      top: 50%;
+      background: none;
+    }
+    .carousel-control i {
+      font-size: 68px;
+      line-height: 42px;
+      position: absolute;
+      display: inline-block;
+      color: rgba(0, 0, 0, 0.8);
+      text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+    }
+    .carousel .carousel-indicators {
+      bottom: -40px;
+    }
+    .carousel-indicators li,
+    .carousel-indicators li.active {
+      width: 20px;
+      height: 0px;
+      margin: 1px 3px;
+      border-radius: 50%;
+    }
+    .carousel-indicators li {
+      background: #999;
+      border-color: transparent;
+      box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    .carousel-indicators li.active {
+      background: #555;
+      box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+  </style>
   <body>
-      <div class="team-top-container">
-        <div style="padding: 1.2rem;" class="nav-container"></div>
-        <h2 class="teams-main" style="text-shadow: 2px 2px #000000;">OUR TEAMS</h2>
-      </div>
-      <br>
+    <div class="team-top-container">
+      <div style="padding: 1.2rem;" class="nav-container"></div>
+      <h2 class="teams-main" style="text-shadow: 2px 2px #000000;">
+        OUR TEAMS
+      </h2>
+      <br />
     </div>
     <div class="network">
       <div class="tree-container"></div>
       <div class="faces">
-        <img class="p1 hide animated" data-toggle="popover" data-placement="top" data-content="Mr. Parth Gautam" src="img/parth.jpg">
-        <img class="p2 hide animated" data-toggle="popover" data-placement="top" data-content="Mrs. Sushmita Ghoshal" src="img/Susmita_Ghoshal.jpg">
-        <img class="p3 hide animated" data-toggle="popover" data-placement="top" data-content="Ms. Arundhati Pande" src="img/arundhati.jpg">
-        <img class="p4 hide animated" data-toggle="popover" data-placement="top" data-content="Ms. Smriti Shekhar" src="img/smriti.jpg">
-        <img class="p5 hide animated" data-toggle="popover" data-placement="top" data-content="Mr. Bipin Bihari Ganguly" src="img/Bipin.jpg">
-        <img class="p6 hide animated" data-toggle="popover" data-placement="top" data-content="Mr. Raju Ray" src="img/raju.jpg">
-        <img class="p7 hide animated" data-toggle="popover" data-placement="top" data-content="Ms. Shivangi Adeshara" src="img/shivangi.jpg">
-        <img class="p8 hide animated" data-toggle="popover" data-placement="top"  src="img/desirelogo.png">
-        <img class="p9 hide animated" data-toggle="popover" data-placement="top" data-content="Ms. Shalini Singh" src="img/Shalini.jpg">
-        <img class="p10 hide animated" data-toggle="popover" data-placement="top" data-content="Ms. Disha Kar" src="img/Disha.jpeg">
-        <img class="p11 hide animated" data-toggle="popover" data-placement="top" data-content="Mr. Tamal Sarkar" src="img/tamal.jpg">
-        <img class="p12 hide animated" data-toggle="popover" data-placement="top" data-content="Mr. Rounak Modi" src="img/rounak.jpg">
-        <img class="p13 hide animated" data-toggle="popover" data-placement="top" data-content="Ms. Asmita Mukherjee" src="img/asmita.jpg">
-        <img class="p14 hide animated" data-toggle="popover" data-placement="top" data-content="Ms. Ritika Ritolia" src="img/ritika.jpg">
-        <img class="p15 hide animated" data-toggle="popover" data-placement="top" data-content="Ms. Baidehi Ghosh" src="img/baidehi.jpg">
-        <img class="p16 hide animated" data-toggle="popover" data-placement="top" data-content="Mr. Soumik Ghoshal" src="img/Soumik.jpg">
-        <img class="p17 hide animated" data-toggle="popover" data-placement="top" data-content="Ms. Poushali Sen" src="img/Poushali.jpg">
-        <img class="p18 hide animated" data-toggle="popover" data-placement="top" data-content="Mr. Sayan Bhattacharya" src="img/sayan.jpg">
+        <img
+          class="p1 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Mr. Parth Gautam"
+          src="img/parth.jpg"
+        />
+        <img
+          class="p2 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Mrs. Sushmita Ghoshal"
+          src="img/Susmita_Ghoshal.jpg"
+        />
+        <img
+          class="p3 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Ms. Arundhati Pande"
+          src="img/arundhati.jpg"
+        />
+        <img
+          class="p4 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Ms. Smriti Shekhar"
+          src="img/smriti.jpg"
+        />
+        <img
+          class="p5 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Mr. Bipin Bihari Ganguly"
+          src="img/Bipin.jpg"
+        />
+        <img
+          class="p6 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Mr. Raju Ray"
+          src="img/raju.jpg"
+        />
+        <img
+          class="p7 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Ms. Shivangi Adeshara"
+          src="img/shivangi.jpg"
+        />
+        <img
+          class="p8 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          src="img/desirelogo.png"
+        />
+        <img
+          class="p9 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Ms. Shalini Singh"
+          src="img/Shalini.jpg"
+        />
+        <img
+          class="p10 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Ms. Disha Kar"
+          src="img/Disha.jpeg"
+        />
+        <img
+          class="p11 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Mr. Tamal Sarkar"
+          src="img/tamal.jpg"
+        />
+        <img
+          class="p12 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Mr. Rounak Modi"
+          src="img/rounak.jpg"
+        />
+        <img
+          class="p13 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Ms. Asmita Mukherjee"
+          src="img/asmita.jpg"
+        />
+        <img
+          class="p14 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Ms. Ritika Ritolia"
+          src="img/ritika.jpg"
+        />
+        <img
+          class="p15 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Ms. Baidehi Ghosh"
+          src="img/baidehi.jpg"
+        />
+        <img
+          class="p16 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Mr. Soumik Ghoshal"
+          src="img/Soumik.jpg"
+        />
+        <img
+          class="p17 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Ms. Poushali Sen"
+          src="img/Poushali.jpg"
+        />
+        <img
+          class="p18 hide animated"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Mr. Sayan Bhattacharya"
+          src="img/sayan.jpg"
+        />
       </div>
     </div>
-	
-	<div class="container">
-	<div class="row">
-		<div class="col-md-8 col-center m-auto">
-			<h2 class = "test_header">Testimonials</h2>
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<!-- Carousel indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-				</ol>   
-				<!-- Wrapper for carousel items -->
-				<div class="carousel-inner">
-					<div class="item carousel-item active">
-						<div class="img-box"><img src="img/Testimonials/prakriti.jpg" alt=""></div>
-						<p class="testimonial">Today was a day full of experiences, fun and learning. 
-              From the very first day I joined desire I learned a lot of stuff
-               and I'll always appreciate it. Last time I missed the chance 
-               to go for the slum visit due to some reasons and I swear I regret it now.
-                This time we visited Aurobindo Nagar and we called people and asked them 
-                to come for document verification process, it was so hot out there but we
-                 all worked with all of our heart and we loved it.
-                  Also, many new people came to us after seeing others and they
-                   were interested in knowing about us and the parents were so dedicated
-                    for the education and admission of their children.
-                    </p>
-						<p class="overview"><b>Prakriti</b>, Intern</p>
-					</div>
-					<div class="item carousel-item">
-						<div class="img-box"><img src="img/Testimonials/20200206_185202 - sai akash.jpg" alt=""></div>
-						<p class="testimonial">Lots of excitement and a bit of nervousness;
-               This is how i woke up in the morning.
-                It is always believed that, "the first experience is the best experience ". 
-                To be very honest, it was a great experience speaking to the people in slums. 
-                I would rather say that, "this was the best Sunday I have ever had after coming to KIIT”.
-                The innocence in the eyes of the people in slums just shook all the threads of my heart. 
-                Their trust and affection brought tears in my eyes.
-                To sum up the whole day, I would say that, " it was an awesome unforgettable experience.
-                I would also like to thank all the coordinators and the new interns for their support.
-                Thank you all.</p>
-						<p class="overview"><b>Sai Akash</b>, Intern</p>
-					</div>
-					<div class="item carousel-item">
-						<div class="img-box"><img src="img/Testimonials/aditi.jpg" alt=""></div>
-						<p class="testimonial">This was the first time I went for the survey in Niladri Vihar for the project Adhyayan.
-                It had an amazing feeling. Seeing parents from slum so enthusiastic 
-                to get their child into some good school made me realize how important
-                education is and what wonderful work we are doing in Desire Foundation.
-                It will be a very proud moment for all of us at Desire when 10 years down
-                the line one of these kids will grow up and be at par as of us.
-                Today it felt that I made the right decision by being a part of Desire Foundation
-                as we really do some work which has a long term impact.
-                  #i_Desire.  </p>
-						<p class="overview"><b>Aditi</b>, Intern</p>
-					</div>
-				</div>
-				<!-- Carousel controls -->
-				<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
-					<i class="fa fa-angle-left"></i>
-				</a>
-				<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
-					<i class="fa fa-angle-right"></i>
-				</a>
-			</div>
-		</div>
-	</div>
-</div>
+    <div class="people">
+      <img
+        class="pm1 rounded-circle pm img-thumbnail"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Mr. Parth Gautam"
+        src="img/parth.jpg"
+      />
+      <img
+        class="pm2 rounded-circle pm img-thumbnail"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Mrs. Sushmita Ghoshal"
+        src="img/Susmita_Ghoshal.jpg"
+      />
+      <img
+        class="pm3 rounded-circle pm img-thumbnail"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Ms. Arundhati Pande"
+        src="img/arundhati.jpg"
+      />
+      <img
+        class="pm4 rounded-circle pm img-thumbnail"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Ms. Smriti Shekhar"
+        src="img/smriti.jpg"
+      />
+      <img
+        class="pm5 rounded-circle pm img-thumbnail"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Mr. Bipin Bihari Ganguly"
+        src="img/Bipin.jpg"
+      />
+      <img
+        class="pm6 rounded-circle pm img-thumbnail"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Mr. Raju Ray"
+        src="img/raju.jpg"
+      />
+      <img
+        class="pm7 rounded-circle pm img-thumbnail"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Ms. Shivangi Adeshara"
+        src="img/shivangi.jpg"
+      />
+      <img
+        class="pm9 rounded-circle pm img-thumbnail"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Ms. Shalini Singh"
+        src="img/Shalini.jpg"
+      />
+      <img
+        class="pm10 rounded-circle pm img-thumbnail"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Ms. Disha Kar"
+        src="img/Disha.jpeg"
+      />
+      <img
+        class="pm11 rounded-circle pm img-thumbnail"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Mr. Tamal Sarkar"
+        src="img/tamal.jpg"
+      />
+      <img
+        class="pm12 rounded-circle pm img-thumbnail"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Mr. Rounak Modi"
+        src="img/rounak.jpg"
+      />
+      <img
+        class="pm13 rounded-circle pm img-thumbnail"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Ms. Asmita Mukherjee"
+        src="img/asmita.jpg"
+      />
+      <img
+        class="pm14 rounded-circle pm img-thumbnail"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Ms. Ritika Ritolia"
+        src="img/ritika.jpg"
+      />
+      <img
+        class="pm15 rounded-circle pm img-thumbnail"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Ms. Baidehi Ghosh"
+        src="img/baidehi.jpg"
+      />
+      <img
+        class="pm16 rounded-circle pm img-thumbnail"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Mr. Soumik Ghoshal"
+        src="img/Soumik.jpg"
+      />
+      <img
+        class="pm17 rounded-circle pm img-thumbnail"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Ms. Poushali Sen"
+        src="img/Poushali.jpg"
+      />
+      <img
+        class="pm18 rounded-circle pm img-thumbnail"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Mr. Sayan Bhattacharya"
+        src="img/sayan.jpg"
+      />
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-center m-auto">
+          <h2 class="test_header">Testimonials</h2>
+          <div id="myCarousel" class="tm carousel slide" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+              <div class="item carousel-item active">
+                <div class="img-box">
+                  <img src="img/Testimonials/prakriti.jpg" alt="" />
+                </div>
+                <p class="testimonial">
+                  Today was a day full of experiences, fun and learning. From
+                  the very first day I joined desire I learned a lot of stuff
+                  and I'll always appreciate it. Last time I missed the chance
+                  to go for the slum visit due to some reasons and I swear I
+                  regret it now. This time we visited Aurobindo Nagar and we
+                  called people and asked them to come for document verification
+                  process, it was so hot out there but we all worked with all of
+                  our heart and we loved it. Also, many new people came to us
+                  after seeing others and they were interested in knowing about
+                  us and the parents were so dedicated for the education and
+                  admission of their children.
+                </p>
+                <p class="overview"><b>Prakriti</b>, Intern</p>
+              </div>
+              <div class="item carousel-item">
+                <div class="img-box">
+                  <img
+                    src="img/Testimonials/20200206_185202 - sai akash.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="testimonial">
+                  Lots of excitement and a bit of nervousness; This is how i
+                  woke up in the morning. It is always believed that, "the first
+                  experience is the best experience ". To be very honest, it was
+                  a great experience speaking to the people in slums. I would
+                  rather say that, "this was the best Sunday I have ever had
+                  after coming to KIIT”. The innocence in the eyes of the people
+                  in slums just shook all the threads of my heart. Their trust
+                  and affection brought tears in my eyes. To sum up the whole
+                  day, I would say that, " it was an awesome unforgettable
+                  experience. I would also like to thank all the coordinators
+                  and the new interns for their support. Thank you all.
+                </p>
+                <p class="overview"><b>Sai Akash</b>, Intern</p>
+              </div>
+              <div class="item carousel-item">
+                <div class="img-box">
+                  <img src="img/Testimonials/aditi.jpg" alt="" />
+                </div>
+                <p class="testimonial">
+                  This was the first time I went for the survey in Niladri Vihar
+                  for the project Adhyayan. It had an amazing feeling. Seeing
+                  parents from slum so enthusiastic to get their child into some
+                  good school made me realize how important education is and
+                  what wonderful work we are doing in Desire Foundation. It will
+                  be a very proud moment for all of us at Desire when 10 years
+                  down the line one of these kids will grow up and be at par as
+                  of us. Today it felt that I made the right decision by being a
+                  part of Desire Foundation as we really do some work which has
+                  a long term impact. #i_Desire.
+                </p>
+                <p class="overview"><b>Aditi</b>, Intern</p>
+              </div>
+            </div>
+            <!-- Carousel controls -->
+            <a
+              class="carousel-control left carousel-control-prev"
+              href="#myCarousel"
+              data-slide="prev"
+            >
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a
+              class="carousel-control right carousel-control-next"
+              href="#myCarousel"
+              data-slide="next"
+            >
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="footer-container"></div>
   </body>
