@@ -121,10 +121,10 @@ margin-bottom: 10px; /* Added */
   background-size: 380px 500px;
   background-repeat: no-repeat;
 }
-#more,#more1,#more2 {
+#more,#more1,#more2,#more3,#more4 {
   display: none;
 }
-#myBtn,#myBtn1,#myBtn2{
+#myBtn,#myBtn1,#myBtn2,#myBtn3,#myBtn4{
   border: 2px #00b4d8 solid;
   color: white;
   width: 140px;
