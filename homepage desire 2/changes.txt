@@ -1,0 +1,6 @@
+
+
+--------
+1. navbar change
+2. popular cause->3 cards in desktop version and slide 1-1-1 in mobile
+3.  events- landscape in desktop and portrait in mobile view

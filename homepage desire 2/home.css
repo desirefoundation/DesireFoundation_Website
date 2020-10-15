@@ -1,0 +1,335 @@
+.navbar{
+  position: fixed;
+font-family: 'Abril Fatface', cursive;
+
+}
+.fbicn{
+  margin: 2px;
+}
+
+.donateus{
+  background-color:#28DCDA;
+  border-radius: 50px;
+  color: white;
+}
+.donateus:hover{
+
+  background-color: #28DCDA;
+  color: white;
+}
+.firstsectext{
+    font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 60px;
+
+
+  padding-top: 40px;
+}
+
+.icons{
+
+  /* margin-left: 300px; */
+  text-align: center;
+
+}
+.helpbtn{
+  margin: 2rem;
+}
+.donateus2{
+  background-color: white;
+  color: #28DCDA;
+  border-color: #28DCDA;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  right: -40%;
+  position: relative;
+
+}
+
+.donateus2:hover{
+  font-size: 22px;
+  background-color: #28DCDA;
+  color: white;
+}
+.firstsecall{
+  padding-top: 20px;
+}
+
+.btn1 {
+  border-radius: 50px;
+  align-items:center;
+  background-color:#28DCDA;
+  border:5px;;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.imgfirstsec{
+  max-height:700px;
+  max-width:  700px;
+
+ display:block;
+ margin:auto;
+}
+.headercauses{
+  text-align: center;
+  font-size: 80px;
+  color: #28DCDA;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.headertext{
+  text-align: center;
+  font-family: 'Sigmar One', cursive;
+  color: #28DCDA;
+}
+.cards{
+  margin-left: 150px;
+}
+.card{
+  align-items: center;
+  border-radius: 0px 50px;
+margin: 0.3rem;
+margin: 0 auto; /* Added */
+float: none; /* Added */
+margin-bottom: 10px; /* Added */
+
+
+
+}
+
+.card-text{
+  font-family: 'Josefin Sans', sans-serif;
+}
+.imagescauses{
+  border-top-right-radius:50px;
+  border-bottom-left-radius: 50px;
+  height: 300px;
+
+}
+.row{
+  align-items: center;
+}
+.causes{
+  background: url("images/bluebackground.jpg");
+  background-repeat: repeat;
+}
+.indiamap{
+  height: 700px;
+  width: 600px;
+  margin-left: 50px;
+}
+.mapnum{
+  font-size: 55px;
+  color:  #28DCDA;
+
+}
+.mapnum:hover{
+  font-size: 70px;
+}
+.textmap{
+  padding-top: 20%;
+text-align: left;
+
+
+}
+.maping{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+
+}
+.maptop{
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 20px;
+}
+.untext{
+  padding-bottom: 15px;
+  border-bottom-style: solid;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 50%;
+
+}
+.adoreimg{
+  background: url(images/adorebg.jpg);
+  width: 700px;
+  height: 500px;
+  background-size: 380px 500px;
+  background-repeat: no-repeat;
+}
+#more,#more1,#more2,#more3,#more4 {
+  display: none;
+}
+#myBtn,#myBtn1,#myBtn2,#myBtn3,#myBtn4{
+  border: 2px #28DCDA solid;
+  color: white;
+  width: 140px;
+  height: 50px;
+  font-size: 18px;
+  background-color:#28DCDA;
+  border-radius: 25px;
+
+}
+.adoretext{
+    font-family: 'Josefin Sans', sans-serif;
+    color:;
+}
+.adorehead{
+  padding-top: 30px;
+  color:   #28DCDA;
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+.adore{
+  background-color: #c8f0f8;
+}
+.latestactivity{
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.adorepic{
+  height: 400px;
+  width: 400px;
+  margin-left: 250px;
+  margin-top: 50px;
+  border-radius: 25px;
+
+}
+.helphead{
+  color:  #28DCDA;
+  font-size: 55px;
+  font-family: 'Raleway', sans-serif;
+}
+.helptext{
+  height: 400px ;
+  width:500px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 5%
+}
+
+.helpbtn{
+  margin: 5px;;
+  height: 200px;
+  width: 200px;
+  border: 5px solid white;
+  border-radius: 25px;
+  background-color:#c0fdff;
+}
+.helpbtntext{
+  vertical-align: baseline;
+}
+.fa{
+  font-size: 25px;
+}
+.icontext{
+  font-size: 20px;
+  vertical-align: baseline;
+  margin-top: 10px;
+  color: #00b4d8;
+
+
+}
+.helpicon{
+  margin-left: 150px;
+}
+
+.bttn1:hover{
+  background-color: #06d6a0;
+}
+.bttn2:hover{
+  background-color: #0353a4;
+}
+.bttn3:hover{
+  background-color: #f72585;
+}
+.bttn4:hover{
+  background-color: #ff9f1c;
+}
+.events{
+  background:  url("images/bluebackground.jpg");
+}
+.headerforevents{
+  font-size: 75px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: #28DCDA;
+}
+.eventstext{
+  text-align: center;
+}
+.eventimg{
+  height: 400px;
+  width: 400px;
+  border-radius: 25px;
+}
+.tableevent{
+  background-color: white;
+  border-radius: 25px;
+  height: 400px;
+
+}
+
+
+
+.eventsecond{
+  margin-left: 50px;
+}
+.text{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 12px;
+}
+  /* bbsr */
+.topmrkr1{
+  position: absolute;
+  bottom: 305px;
+  left: 405px;
+    color: #28DCDA;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.mrkr1{
+  position: absolute;
+  bottom: 290px;
+  left: 440px;
+    color: #28DCDA;
+}
+  /* kolkata */
+
+
+
+
+.mrkr2{
+  position: absolute;
+  bottom: 340px;
+  left: 485px;
+  color: #28DCDA;
+}
+.topmrkr2{
+  position: absolute;
+  bottom: 355px;
+  left: 445px;
+    color: #28DCDA;
+    font-family: 'Josefin Sans', sans-serif;
+}
+  /*ahm */
+.mrkr3{
+  position: absolute;
+  bottom: 360px;
+  left: 150px;
+  color: #28DCDA;
+}
+.topmrkr3{
+
+  position: absolute;
+  bottom: 375px;
+  left: 130px;
+    color: #28DCDA;
+    font-family: 'Josefin Sans', sans-serif;
+}
