@@ -281,23 +281,50 @@
     font-family: "Raleway", sans-serif;
     color: #28dcda;
 }
+
 .eventstext {
-    text-align: center;
-}
-.eventimg {
-    height: 400px;
-    width: 400px;
-    border-radius: 25px;
-}
-.tableevent {
-    background-color: white;
-    border-radius: 25px;
-    height: 400px;
+	text-align: center;
+	margin-bottom: 2rem;
 }
 
-.eventsecond {
-    margin-left: 50px;
+.event-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 3rem;
 }
+
+.event-container .eventimg {
+    height: 400px;
+    width: 400px;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.event-container .eventsecond {
+	padding: 2rem;
+	height: 400px;
+    background-color: white;
+    border-radius: 0px 25px 25px 0px;
+}
+
+@media screen and (max-width: 900px) {
+	.event-container {
+		flex-direction: column;
+		padding: 2rem;
+	}
+
+	.event-container .eventimg {
+		width: 100%;
+		border-radius: 25px 25px 0 0;
+	}
+
+	.event-container .eventsecond {
+		width: 100%;
+		border-radius: 0 0 25px 25px;
+	}
+}
+
+
 .text {
     font-family: "Josefin Sans", sans-serif;
     font-size: 12px;
