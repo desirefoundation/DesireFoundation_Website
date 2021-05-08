@@ -4,13 +4,18 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-F8EYB6Q1XD"></script>
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-F8EYB6Q1XD"
+        ></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            
-            gtag('config', 'G-F8EYB6Q1XD');
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-F8EYB6Q1XD");
         </script>
         <title>Desire Foundation</title>
 
@@ -30,6 +35,56 @@
         <link rel="icon" href="img/logo.png" type="image/x-icon" />
     </head>
     <body>
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <form
+                            style="
+                                background-color: white;
+								font-family: Spectral, sans-serif;
+                                padding: 3px;
+                                text-align: center;
+								margin: 2rem;
+                            "
+                            action="https://tinyletter.com/desirefoundation"
+                            method="post"
+                            target="popupwindow"
+                            onsubmit="window.open('https://tinyletter.com/desirefoundation', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+                        >
+							<p>Subscribe to our Newsletter</p>
+							<br>
+							<h2>The Arrow</h2>
+							<p>Bi-monthly Bytes from Desire Foundation.</p>
+                            
+                            <p>
+                                <input
+                                    type="text"
+                                    style="width: 100%"
+                                    name="email"
+                                    id="tlemail"
+									placeholder="Enter your email address"
+                                />
+                            </p>
+                            <input type="hidden" value="1" name="embed" /><input
+                                type="submit"
+                                value="Subscribe"
+								class="btn btn-primary"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="home">
             <div class="nav-container"></div>
 
@@ -172,4 +227,10 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/index.js"></script>
+
+    <script type="text/javascript">
+        $(window).on("load", function () {
+            $("#exampleModal").modal("show");
+        });
+    </script>
 </html>
