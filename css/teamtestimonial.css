@@ -1,0 +1,39 @@
+.m-100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .card {
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .card-bg {
+    border-radius: 15px;
+    border: 2px solid #daebff;
+    background: #daebff;
+  }
+  
+  .card-body {
+    border-radius: 50px;
+    position: relative;
+    bottom: 35px;
+  }
+  
+  .carousel-control-next,
+  .carousel-control-prev
+  /*, .carousel-indicators */ {
+    filter: invert(100%);
+  }
+  
+  .carousel-indicators {
+    filter: invert(50%);
+  }
+  

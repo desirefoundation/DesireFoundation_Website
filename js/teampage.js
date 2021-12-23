@@ -14,6 +14,17 @@ $(document).ready(function () {
     $('.tree-container').load('tree.html');
 })
 
+$(function () {
+    $(".teamheader-container").load("teamheader.html");
+});
+
+$(function () {
+    $(".teamcard-container").load("teamcard.html");
+});
+
+$(function () {
+    $(".teamtestimonial-container").load("teamtestimonial.html");
+});
 
 $(function () {
     $(".footer-container").load("footer.html");
